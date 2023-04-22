@@ -12,6 +12,12 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6351710214347629"
         crossorigin="anonymous"></script>
 
+
+    <!-- git stats -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
     <!-- google icon link -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -27,7 +33,7 @@
     <link href="./assests/sonu-tree-bg-blur-color.png" rel="apple-touch-icon">
     <!---xxx- favicons -xxx-->
 
-    <title>Sonu's Webspace</title>
+    <title>Sonukr's Webspace</title>
 </head>
 
 <!-- Google Tag Manager -->
@@ -75,7 +81,7 @@
                 <span id="closeMenu" onclick="sideClose()" class="material-symbols-outlined">close </span>
             </div>
 
-            <div class="sidebar-content">
+            <div class="sidebar-content" class="nav-link home">
 
 
                 <div class="sideImg">
@@ -84,7 +90,7 @@
 
 
 
-                <div class="name1"><h2>Sonu Kumar Yadav</h2></div>
+                <div class="name1" id="user-detail-name"><h2>Sonu Kumar Yadav</h2></div>
 
 
 
@@ -96,7 +102,7 @@
                         </a>
                     </div>
 
-                    <div class="iconShape" id="iconGit">
+                    <div class="iconShape" id="iconGit" id="contact-github">
                         <a id="links1" href="https://github.com/sonukryadav" target="_blank" rel="noopener noreferrer nofollow">
                             <img id="iconDesign" src="./assests/github gif.png" alt="github">
                         </a>
@@ -135,7 +141,7 @@
 
                     <div>
                         <a href="#">
-                            <div class="sec2" id="home">
+                            <div class="sec2" id="home"   id="nav-menu">
                                 <div>
                                     <span class="material-symbols-outlined">home</span>
                                 </div>
@@ -146,7 +152,7 @@
 
                     <div>
                         <a href="#abo1">
-                            <div class="sec2" id="about">
+                            <div class="sec2" id="about" id="nav-menu">
                                 <div>
                                     <span class="material-symbols-outlined">person</span>
                                 </div>
@@ -159,7 +165,7 @@
 
                     <div>
                         <a href="#res1">
-                            <div class="sec2" id="resume">
+                            <div class="sec2" id="resume" id="nav-menu">
                                 <div>
                                     <span class="material-symbols-outlined">description</span>
                                 </div>
@@ -172,7 +178,7 @@
 
                     <div>
                         <a href="#pro1">
-                            <div class="sec2" id="project">
+                            <div class="sec2" id="project" id="nav-menu">
                                 <div>
                                     <span class="material-symbols-outlined">auto_stories</span>
                                 </div>
@@ -198,7 +204,7 @@
 
                     <div>
                         <a href="#con0">
-                            <div class="sec2" id="contact">
+                            <div class="sec2" id="contact" id="nav-menu">
                                 <div>
                                     <span class="material-symbols-outlined">contact_mail</span>
                                 </div>
@@ -209,11 +215,11 @@
                         </a>
                     </div>
 
-                    <!-- google translate -->
-                    <div id="google_translate_element">  </div>
+
+                    <div><a href="./assests/Sonu-Yadav-Resume.pdf" download><button id="res3sidebar">Download Resume</button></a></div>
 
                     <!-- flower -->
-                    <div class="flowerpot">
+                    <!-- <div class="flowerpot">
                         <div>
                             <img id="flow1" src="./assests/potted-flower-plant-flat.gif" alt="flower">
                         </div>
@@ -223,7 +229,7 @@
                         <div>
                             <img id="flow1" src="./assests/potted-flower-plant-flat.gif" alt="flower">
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -237,7 +243,7 @@
 
             <!-- bar icon -->
             <div>
-                <span id="menu" onclick="sideOpen()" class="material-symbols-outlined">menu</span>
+                <span id="menu" id="nav-menu" onclick="sideOpen()" class="material-symbols-outlined">menu</span>
             </div>
 
             <!-- first box -->
@@ -248,7 +254,7 @@
                 </div>
 
                 <div class="imgdiv1">
-                    <img id="imgs2" src="./assests/sonu-tree-bg-removed-blackAndWhite.png" alt="sonu's pic">
+                    <img class="home-img" id="imgs2" src="./assests/sonu-tree-bg-removed-blackAndWhite.png" alt="sonu's pic">
                     <h1 id="text0">Sonu Kumar Yadav</h1>
                 </div>
 
@@ -256,43 +262,43 @@
 
 
             <!-- second box -->
-            <div class="about1">
+            <div class="about1" id="about" class="about section">
 
                 <h1 id="abo1">About</h1>
 
-                <p id="abo2">
+                <p id="abo2" id="user-detail-intro">
 
-                    Hello and welcome to my web space! I'm Sonu Kumar Yadav, and I'm thrilled that you're here.
-                    <br>
-                    Let me start by saying that building websites and mobile apps isn't just a job for me – it's a passion. Every project I
-                    work on, every line of code I write, is an opportunity for me to pour my heart and soul into my work.
-                    <br><br>
-                    As a mobile app and  full-stack web developer, I am constantly striving to push the limits of what I can do. I love tackling new
-                    challenges, learning new skills, and collaborating with clients from all walks of life. And over the past year, my
-                    training at 'Masai School' has given me the skills and experience to tackle any project that comes my way.
-                    <br><br>
-                    But what really drives me isn't just the thrill of working with new technologies and challenging projects. It's the
-                    satisfaction that comes from knowing that I'm making a real difference in people's lives. Whether I'm building a website
-                    for a small business or developing a mobile app that makes people's lives easier, I know that every line of code I write
-                    has the potential to improve someone's day.
-                    <br><br>
-                    So if you're looking for a developer who is passionate, dedicated, and deeply committed to making a difference in the
-                    world, look no further. I am here for you, and I can't wait to help bring your vision to life. Thank you for taking the
-                    time to visit my web space – I hope to connect with you soon.
-                    <br><br>
-                    Thank You.
+                    <!-- Hello and welcome to my web space! I'm Sonu Kumar Yadav, and I'm thrilled that you're here.
+                    Thank You. -->
+                    <p id="aboutText0" style="color:#237BFF;margin-top: 30px;">I'm <span style="color:#F08C35">Sonu kumar Yadav,</span> React Native & MERN Stack Developer
+                        from Uttar Pradesh, India.</p><br>
+
+                    <p id="user-detail-intro" id="aboutText1" style="color:white;">As a fresh <span style="color:#237BFF">React Native developer</span>, I'm excited to dive headfirst into the world of
+                        mobile app development. I may be new to this field, but don't let that fool you - I'm armed with the <span
+                            style="color:#237BFF">latest coding techniques and a passion</span> for creating applications that will knock
+                        your socks off.<br><br>
+                        With <span style="color:#237BFF">React Native</span>, I can build apps that run on both <span
+                            style="color:#F08C35">iOS</span> and <span style="color:#F08C35">Android</span> platforms, which means I get to
+                        be a superhero without the cape. From <span style="color:#237BFF">designing sleek UIs</span> to <span
+                            style="color:#237BFF">integrating APIs</span>, I am eager to flex my coding muscles and create something truly
+                        unique.<br><br>
+                        I am always on the lookout for opportunities to collaborate and learn from others. After all, <span
+                            style="color:#237BFF">coding is a team sport</span>, and I'm ready to be a <span style="color:#F08C35">team
+                            player</span>. So let's work together to build something awesome and leave a lasting mark on the world of mobile
+                        app development.<br><br>
+                        Thank you.
+                    </p>
                 </p>
-
 
                 <div class="abo3u">
                         <div  class ="abo3u2">
                             <div>
-                                <span id="abo3u3">➡️ Birthday:</span>
-                                <span id="abo3u4">1998</span>
+                                <span id="abo3u3">➡️ Education:</span>
+                                <span id="abo3u4">B.Tech.(2022)</span>
                             </div>
                             <div>
-                                <span id="abo3u3">➡️ Phone:</span>
-                                <span id="abo3u4">+91 9628407182</span>
+                                <span id="abo3u3">➡️ Training: </span>
+                                <span id="abo3u4">Masai School (React Native)</span>
                             </div>
                             <div>
                                 <span id="abo3u3">➡️ Age:</span>
@@ -306,20 +312,20 @@
 
                         <div class ="abo3u2">
                             <div>
-                                <span id="abo3u3">➡️ Website:</span>
-                                <span id="abo3u4"><a href="https://sonukr.in/">sonukr.in</a></span>
+                                <span id="abo3u3">➡️ Phone:</span>
+                                <span id="abo3u4" id="contact-phone">+91 9628407182</span>
                             </div>
                             <div>
                                 <span id="abo3u3">➡️ State:</span>
                                 <span id="abo3u4">U.P., India</span>
                             </div>
                             <div>
-                                <span id="abo3u3">➡️ Education:</span>
-                                <span id="abo3u4">B.Tech.</span>
+                                <span id="abo3u3">➡️ Birthday:</span>
+                                <span id="abo3u4">1998</span>
                             </div>
                             <div>
-                                <span id="abo3u3">➡️ Email:</span>
-                                <span id="abo3u4"><a style="text-decoration: underline;color:rgb(7, 27, 140)" href="mailto:sonukryadav56@gmail.com">sonukryadav56@gmail.com</a></span>
+                                <span id="abo3u3" id="contact-email">➡️ Email:</span>
+                                <span id="abo3u4"><a style="text-decoration: underline;color:rgb(255, 255, 255)" href="mailto:sonukryadav56@gmail.com">sonukryadav56@gmail.com</a></span>
                             </div>
                         </div>
                 </div>
@@ -329,7 +335,7 @@
 
             <!-- skills -->
 
-            <div class="skill1">
+            <div class="skill1" id="skills">
 
                 <h1 id="ski1">Skills</h1>
 
@@ -350,10 +356,10 @@
                         <img id="techlogo" src="./techStackLogo/javascript.png" alt="JS(Es6)"/>
                         <p id="lname">JS(ES6)</p>
                     </div>
-                    <div>
+                    <!-- <div>
                         <img id="techlogo" src="./techStackLogo/Ajax.png" alt="Ajax"/>
                         <p id="lname">AJAX</p>
-                    </div>
+                    </div> -->
                     <div>
                         <img id="techlogo" src="./techStackLogo/JSON.jpg" alt="JSON"/>
                         <p id="lname">JSON</p>
@@ -364,7 +370,7 @@
                     </div>
                     <div>
                         <img id="techlogo" src="./techStackLogo/Reactjs.png" alt="React"/>
-                        <p id="lname">REACT JS</p>
+                        <p id="lname">REACT NATIVE & JS</p>
                     </div>
                     <div>
                         <img id="techlogo" src="./techStackLogo/redux.png" alt="Redux" />
@@ -413,11 +419,11 @@
 
         <div id="myPlot"></div>
 
-        <div id="myPlot">
+        <!-- <div id="myPlot">
                 <a href="http://www.github.com/sonukryadav"><img
                 src="https://github-readme-activity-graph.cyclic.app/graph?username=sonukryadav&bg_color=1c1917&color=ffffff&line=0891b2&point=ffffff&area_color=1c1917&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph"
                 alt="GitHub Commits Graph" /></a>
-        </div>
+        </div> -->
 
 
 
@@ -427,23 +433,23 @@
                 <h1 id="res1">Resume</h1>
 
                 <div class="res2p">
-                    <img id="res2" src="./assests/Sonu_Kumar_Yadav_Resume_image.jpg" alt="resume">
+                    <img id="res2" src="./assests/Sonu-Yadav-Resume-Image.jpg" alt="resume">
                 </div>
 
-                <div><a href="./assests/Sonu_Kumar_Yadav_Resume.pdf" download><button id="res3">Download Resume</button></a></div>
+                <div><a href="./assests/Sonu-Yadav-Resume.pdf" download><button id="res3">Download Resume</button></a></div>
 
             </div>
 
 
             <!-- projects -->
-            <div class="project1">
+            <div class="project1"  class="project-card">
 
                 <h1 id="pro1">Projects</h1>
 
                 <div class="pro2">
                     <div>
                         <!-- project 1 -->
-                        <div class="projects">
+                        <div class="projects" class="project-card">
                             <div class="proframe">
                                 <iframe id="iframe" src="https://dreamy-frangipane-645120.netlify.app/"></iframe>
                             </div>
@@ -481,7 +487,7 @@
                         </div>
 
                         <!-- project 2 -->
-                        <div class="projects">
+                        <div class="projects" class="project-card">
                             <div class="procontent">
                                 <p id="procheading">My Fitnesspal clone</p>
                                 <p id="proctext">Want to eat more mindfully? Track meals, learn about your habits, and reach your goals with MyFitnessPal.</p>
@@ -517,7 +523,7 @@
                         </div>
 
                         <!-- project 3 -->
-                        <div class="projects">
+                        <div class="projects" class="project-card">
                             <div class="proframe">
                                 <iframe id="iframe" src="https://papaya-empanada-e1f625.netlify.app/#"></iframe>
                             </div>
@@ -550,7 +556,7 @@
                         </div>
 
                         <!-- project 4 -->
-                        <div class="projects">
+                        <div class="projects" class="project-card">
                             <div class="procontent">
                                 <p id="procheading">TATA-1mg Clone</p>
                                 <p id="proctext">1mg.com brings to you an online platform, which can be accessed for all your health needs. We are trying to make
@@ -636,6 +642,16 @@
                 </div>
 
 
+            </div>
+
+
+            <!-- git stats  -->
+            <p
+                style="display:block;font-size: 35px; font-weight: 900; text-align: center; padding: 15px; color:#000000; background-color: #8e8e8ed1;border-top-right-radius:10px;border-top-left-radius:10px; width:100%;margin:auto;">
+                My Github Calender</p>
+            <div class="calendar" class="react-activity-calendar" style="background-color: #0f0e0e8f; width:100%;color:#0066ff; font-size: 24px; font-weight: 500;">
+                <!-- Loading stuff -->
+                Loading the data just for you.
             </div>
 
 
@@ -749,8 +765,7 @@
     var typed = new Typed('.type', {
             strings: [
                 ' Mobile App Developer.',
-                ' MERN stack developer.', 
-                
+                ' MERN stack developer.',
             ],
 
         // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
@@ -787,8 +802,8 @@
         });
 </script>
 <script>
-    var xArray = ["HTML", "CSS", "SASS", "JS(ES6)", "AJAX", "JSON", "JAVA", "React js", "Redux", "Git/Github", "Material UI", "Chakra UI", "Bootstrap"];
-    var yArray = [84, 69, 42, 85, 71, 73, 70, 87, 80, 88, 90, 83, 70];
+    var xArray = ["HTML", "CSS", "SASS", "JS(ES6)", "JSON", "JAVA", "React js", "React Native", "Redux", "Git/Github", "Material UI", "Chakra UI", "Bootstrap"];
+    var yArray = [84, 69, 42, 85, 73, 70, 87, 85, 80, 88, 90, 83, 70];
     var data = [{
         x: xArray,
         y: yArray,
@@ -801,12 +816,17 @@
 
 
 
-<!-- google translate -->
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-    }
-</script>
+    <!-- git stats -->
+<script>
+    GitHubCalendar(".calendar", "sonukryadav");
 
-<script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "sonukryadav", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "sonukryadav", {
+        proxy(sonukryadav) {
+            return fetch(`https://your-proxy.com/github?user=${sonukryadav}`)
+        }
+    }).then(r => r.text())
+</script>
