@@ -24,7 +24,7 @@ function sideOpen() {
         }
         else {
             side.style.width = w + "px";
-            w+=10;
+            w += 10;
         }
 
     }
@@ -57,7 +57,7 @@ function sideClose() {
 
 function clickAnywhere() {
     if (window.innerWidth <= 1000 && signal1 == 1) {
-            sideClose();
+        sideClose();
         // console.log(signal1);
     }
 }
@@ -84,6 +84,10 @@ function scroll1() {
     let aboutS = document.querySelector(".about1").offsetTop - 60;
     // console.log(aboutS);
 
+
+    let skillS = document.querySelector(".skill1").offsetTop - 60;
+    // console.log(skillS);
+
     let resumeS = document.querySelector(".resume1").offsetTop - 60;
     // console.log(resumeS);
 
@@ -96,11 +100,6 @@ function scroll1() {
     let contactS = document.querySelector(".contact1").offsetTop - 60;
     // console.log(contactS);
 
-    let th1 = aboutS - topbS;
-    let th2 = resumeS - aboutS;
-    let th3 = projectS - resumeS;
-    let th4 = blogS - projectS;
-    let th5 = contactS - blogS;
 
     // home
     if (h2 < aboutS) {
@@ -115,13 +114,25 @@ function scroll1() {
     }
 
     // about
-    if (h2 > aboutS && h2 < resumeS) {
+    if (h2 > aboutS && h2 < skillS) {
         let scl = document.querySelector("#about");
         scl.style.color = "rgb(3, 188, 255)";
         scl.style.boxShadow = "1px 1px 10px rgb(194, 194, 194)";
     }
     else {
         let scl = document.querySelector("#about");
+        scl.style.color = "white";
+        scl.style.boxShadow = "none";
+    }
+
+    skill
+    if (h2 > skillS && h2 < resumeS) {
+        let scl = document.querySelector("#skill");
+        scl.style.color = "rgb(3, 188, 255)";
+        scl.style.boxShadow = "1px 1px 10px rgb(194, 194, 194)";
+    }
+    else {
+        let scl = document.querySelector("#skill");
         scl.style.color = "white";
         scl.style.boxShadow = "none";
     }
@@ -140,7 +151,7 @@ function scroll1() {
 
 
     // project
-    if (h2 > projectS && h2 < blogS) {
+    if (h2 > projectS && h2 < contactS) {
         let scl = document.querySelector("#project");
         scl.style.color = "rgb(3, 188, 255)";
         scl.style.boxShadow = "1px 1px 10px rgb(194, 194, 194)";
@@ -153,20 +164,20 @@ function scroll1() {
 
 
     // blog
-    if (h2 > blogS && h2 < contactS) {
-        let scl = document.querySelector("#blog");
-        scl.style.color = "rgb(3, 188, 255)";
-        scl.style.boxShadow = "1px 1px 10px rgb(194, 194, 194)";
-    }
-    else {
-        let scl = document.querySelector("#blog");
-        scl.style.color = "white";
-        scl.style.boxShadow = "none";
-    }
+    // if (h2 > blogS && h2 < contactS) {
+    //     let scl = document.querySelector("#blog");
+    //     scl.style.color = "rgb(3, 188, 255)";
+    //     scl.style.boxShadow = "1px 1px 10px rgb(194, 194, 194)";
+    // }
+    // else {
+    //     let scl = document.querySelector("#blog");
+    //     scl.style.color = "white";
+    //     scl.style.boxShadow = "none";
+    // }
 
 
     // contact
-    if (h2 > contactS && h2 < (contactS+650)) {
+    if (h2 > contactS && h2 < (contactS + 650)) {
         let scl = document.querySelector("#contact");
         scl.style.color = "rgb(3, 188, 255)";
         scl.style.boxShadow = "1px 1px 10px rgb(194, 194, 194)";
