@@ -96,13 +96,13 @@
 
                 <div class="socialLinks">
 
-                    <div class="iconShape">
+                    <div class="iconShape" id="contact-linkedin"><!-- masai cypress id="contact-linkedin"-->
                         <a id="links1" href="https://www.linkedin.com/in/sonu-kumar-yadav-0a609b180/" target="_blank" rel="noopener noreferrer nofollow">
                             <img id="iconDesign" src="./assests/linkedin gif.gif" alt="linkedin">
                         </a>
                     </div>
 
-                    <div class="iconShape" id="iconGit">
+                    <div class="iconShape" id="iconGit" id="contact-github"><!-- masai cypress id="contact-github"-->
                         <a id="links1" href="https://github.com/sonukryadav" target="_blank" rel="noopener noreferrer nofollow">
                             <img id="iconDesign" src="./assests/github gif.png" alt="github">
                         </a>
@@ -126,11 +126,11 @@
                         </a>
                     </div>
 
-                    <div class="iconShape">
+                    <!-- <div class="iconShape">
                         <a id="links1" href="https://www.facebook.com/profile.php?id=100077394212665" target="_blank" rel="noopener noreferrer nofollow">
                             <img id="iconDesign" src="./assests/facebook gif.gif" alt="facebook">
                         </a>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -140,7 +140,7 @@
                 <div class="sections1">
 
                     <div>
-                        <a href="#">
+                        <a href="#" class="nav-link home"><!-- masai cypress class="nav-link home" -->
                             <div class="sec2" id="home">
                                 <div>
                                     <span class="material-symbols-outlined">home</span>
@@ -151,7 +151,7 @@
                     </div>
 
                     <div>
-                        <a href="#abo1"><!-- masai cypress -->
+                        <a href="#abo1" class="nav-link about"><!-- masai cypress class="nav-link about" -->
                             <div class="sec2" id="about" class="about section"><!-- masai cypress class="about section" -->
                                 <div>
                                     <span class="material-symbols-outlined">person</span>
@@ -164,8 +164,8 @@
                     </div>
 
                     <div>
-                        <a href="#ski1"><!-- masai cypress -->
-                            <div class="sec2" id="skill" class="about section"><!-- masai cypress class="about section" -->
+                        <a href="#ski1" class="nav-link skills"><!-- masai cypress class="nav-link skills" -->
+                            <div class="sec2" id="skill"  id="skills"><!-- masai cypress id="skills" -->
                                 <div>
                                     <span class="material-symbols-outlined">person</span>
                                 </div>
@@ -177,7 +177,7 @@
                     </div>
 
                     <div>
-                        <a href="#res1">
+                        <a href="#res1" class="nav-link resume"><!-- masai cypress class="nav-link projects" -->
                             <div class="sec2" id="resume">
                                 <div>
                                     <span class="material-symbols-outlined">description</span>
@@ -190,8 +190,8 @@
                     </div>
 
                     <div>
-                        <a href="#pro1">
-                            <div class="sec2" id="project">
+                        <a href="#pro1" class="nav-link projects"><!-- masai cypress class="nav-link projects" -->
+                            <div class="sec2" id="project" id="projects"><!-- masai cypress id="projects" -->
                                 <div>
                                     <span class="material-symbols-outlined">auto_stories</span>
                                 </div>
@@ -216,7 +216,7 @@
                     </div> -->
 
                     <div>
-                        <a href="#con0">
+                        <a href="#con0" class="nav-link contact"><!-- masai cypress class="nav-link projects" -->
                             <div class="sec2" id="contact">
                                 <div>
                                     <span class="material-symbols-outlined">contact_mail</span>
@@ -267,8 +267,8 @@
                 </div>
 
                 <div class="imgdiv1">
-                    <img id="imgs2" src="./assests/sonu-tree-bg-removed-blackAndWhite.png" alt="sonu's pic">
-                    <h1 id="text0">Sonu Kumar Yadav</h1>
+                    <img id="imgs2" src="./assests/sonu-tree-bg-removed-blackAndWhite.png" alt="sonu's pic" class="home-img"><!-- masai cypress class="home-img" -->
+                    <h1 id="text0" id="user-detail-name">Sonu Kumar Yadav</h1><!-- masai cypress id="user-detail-name" -->
                 </div>
 
             </div>
@@ -279,7 +279,7 @@
 
                 <h1 id="abo1">About</h1>
 
-                <p id="abo2">
+                <p id="abo2"  id="user-detail-intro"><!-- masai cypress id="user-detail-name" -->
 
                     <!-- Hello and welcome to my web space! I'm Sonu Kumar Yadav, and I'm thrilled that you're here.
                     Thank You. -->
@@ -326,7 +326,7 @@
                         <div class ="abo3u2">
                             <div>
                                 <span id="abo3u3">➡️ Phone:</span>
-                                <span id="abo3u4">+91 9628407182</span>
+                                <span id="abo3u4"  id="contact-phone">+91 9628407182</span> <!-- masai cypress  id="contact-phone" -->
                             </div>
                             <div>
                                 <span id="abo3u3">➡️ State:</span>
@@ -338,7 +338,7 @@
                             </div>
                             <div>
                                 <span id="abo3u3">➡️ Email:</span>
-                                <span id="abo3u4"><a style="text-decoration: underline;color:rgb(255, 255, 255)" href="mailto:sonukryadav56@gmail.com">sonukryadav56@gmail.com</a></span>
+                                <span id="abo3u4"  id="contact-email"><a style="text-decoration: underline;color:rgb(255, 255, 255)" href="mailto:sonukryadav56@gmail.com">sonukryadav56@gmail.com</a></span><!-- masai cypress   id="contact-email" -->
                             </div>
                         </div>
                 </div>
@@ -354,76 +354,77 @@
 
                 <div class="ski2">
                     <div>
-                        <img id="techlogo" src="./techStackLogo/html.png" alt="HTML" />
-                        <p id="lname">HTML5</p>
+                        <img id="techlogo" src="./techStackLogo/html.png" alt="HTML"  class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">HTML5</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/css.png" alt="CSS" />
-                        <p id="lname">CSS</p>
+                        <img id="techlogo" src="./techStackLogo/css.png" alt="CSS"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">CSS</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/sass.png" alt="SASS"/>
-                        <p id="lname">SASS</p>
+                        <img id="techlogo" src="./techStackLogo/sass.png" alt="SASS" class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">SASS</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/javascript.png" alt="JS(Es6)"/>
-                        <p id="lname">JS(ES6)</p>
+                        <img id="techlogo" src="./techStackLogo/javascript.png" alt="JS(Es6)" class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">JS(ES6)</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <!-- <div>
                         <img id="techlogo" src="./techStackLogo/Ajax.png" alt="Ajax"/>
                         <p id="lname">AJAX</p>
                     </div> -->
+
                     <div>
-                        <img id="techlogo" src="./techStackLogo/JSON.jpg" alt="JSON"/>
-                        <p id="lname">JSON</p>
+                        <img id="techlogo" src="./techStackLogo/JSON.jpg" alt="JSON"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">JSON</p><!-- masai cypress  class="skills-card-name" -->
                         </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/JAVA.webp" alt="JAVA"/>
-                        <p id="lname">JAVA</p>
+                        <img id="techlogo" src="./techStackLogo/JAVA.webp" alt="JAVA"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">JAVA</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/Reactjs.png" alt="React"/>
-                        <p id="lname">REACT NATIVE & JS</p>
+                        <img id="techlogo" src="./techStackLogo/Reactjs.png" alt="React"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">REACT NATIVE & JS</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/redux.png" alt="Redux" />
-                        <p id="lname">REDUX</p>
+                        <img id="techlogo" src="./techStackLogo/redux.png" alt="Redux"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">REDUX</p><!-- masai cypress  class="skills-card-name" -->
                         </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/git.png" alt="Git" />
-                        <p id="lname">GIT/GITHUB</p>
+                        <img id="techlogo" src="./techStackLogo/git.png" alt="Git"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">GIT/GITHUB</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/restapi.png" alt="RESTful API" />
-                        <p id="lname">RESTful API</p>
+                        <img id="techlogo" src="./techStackLogo/restapi.png" alt="RESTful API"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">RESTful API</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/mongodb.svg" alt="RESTful API" />
-                        <p id="lname">MongoDB</p>
+                        <img id="techlogo" src="./techStackLogo/mongodb.svg" alt="RESTful API"  class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">MongoDB</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/nodejs.svg" alt="RESTful API" />
-                        <p id="lname">NodeJs</p>
+                        <img id="techlogo" src="./techStackLogo/nodejs.svg" alt="RESTful API"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">NodeJs</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/firebase.png" alt="firebase image" />
-                        <p id="lname">FIREBASE</p>
+                        <img id="techlogo" src="./techStackLogo/firebase.png" alt="firebase image"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">FIREBASE</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/MATERIAL UI.png" alt="Material ui"/>
-                        <p id="lname">MATERIAL UI</p>
+                        <img id="techlogo" src="./techStackLogo/MATERIAL UI.png" alt="Material ui"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">MATERIAL UI</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/CHAKRAUI.jpg" alt="Chakra ui"/>
-                        <p id="lname">CHAKRA UI</p>
+                        <img id="techlogo" src="./techStackLogo/CHAKRAUI.jpg" alt="Chakra ui"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">CHAKRA UI</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/DSA.png" alt="DSA" />
-                        <p id="lname">DSA</p>
+                        <img id="techlogo" src="./techStackLogo/DSA.png" alt="DSA"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">DSA</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <div>
-                        <img id="techlogo" src="./techStackLogo/bootstrap-logo.png" alt="bootstrap" />
-                        <p id="lname">BOOTSTRAP</p>
+                        <img id="techlogo" src="./techStackLogo/bootstrap-logo.png" alt="bootstrap"  class="skills-card-img"/><!-- masai cypress  class="skills-card-img" -->
+                        <p id="lname" class="skills-card-name">BOOTSTRAP</p><!-- masai cypress  class="skills-card-name" -->
                     </div>
                     <!-- <div><img id="techlogo" src="" alt="" /></div> -->
                 </div>
@@ -446,11 +447,14 @@
                 <h1 id="res1">Resume</h1>
 
                 <div class="res2p">
-                    <img id="res2" src="./assests/Sonu-Yadav-Resume-Image.jpg" alt="resume">
+                    <!-- <img id="res2" src="./assests/Sonu-Yadav-Resume-Image.jpg" alt="resume"> -->
+                    <iframe src="./assests/Sonu-Yadav-Resume.pdf" width="70%" height="600px" name="Sonu's resume" style="display: block; margin:auto; border:1px solid black;" loading="eager">
+                    </iframe>
                 </div>
 
-                <div><a href="./assests/Sonu-Yadav-Resume.pdf" download><button id="res3">Download Resume</button></a></div>
-
+                <div><a href="./assests/Sonu-Yadav-Resume.pdf" download><button id="res3" id="resume-button-1">Download Resume</button></a></div><!-- masai cypress id="resume-button-1" -->
+                <div><button id="res3" id="resume-button-2" style="background-image: linear-gradient(90deg, rgba(36,0,0,1) 16%, rgba(54,54,98,1) 57%, rgba(52,140,158,1) 100%); margin-top: 35px;" onclick="window.open('https://drive.google.com/file/d/122KRQEnSWFU3YnfyHmoRQzkeEqHuQ3b0/view?usp=share_link', '_blank')">Open in a new tab</button></div>
+                <!-- masai cypress id="resume-button-2" -->
             </div>
 
 
@@ -462,17 +466,17 @@
                 <div class="pro2">
                     <div>
                         <!-- project 1 -->
-                        <div class="projects">
+                        <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
                             <div class="proframe">
                                 <!-- <iframe id="iframe" src="https://dreamy-frangipane-645120.netlify.app/"></iframe> -->
                                 <img id="posterPro" src="./assests/mahabis poster.png"></img>
                             </div>
                             <div class="procontent">
-                                <p id="procheading">Mahabis imitation</p>
-                                <p id="proctext">Contributed to the development of authentication functionality and UI for this project, utilizing skills in authentication
-                                protocols, security measures, and user access management to ensure secure access control and protect user data with firebase.</p>
+                                <p id="procheading" class="project-title">Mahabis imitation</p><!-- masai cypress class="project-title" -->
+                                <p id="proctext" class="project-description">Contributed to the development of authentication functionality and UI for this project, utilizing skills in authentication
+                                protocols, security measures, and user access management to ensure secure access control and protect user data with firebase.</p><!-- masai cypress class="project-description" -->
                                 <p id="proccollab">A collaborative project, built in 5 days by a team of 4 developers.</p>
-                                <div class="proctech0">
+                                <div class="proctech0" class="project-tech-stack"><!-- masai cypress class="project-tech-stack" -->
                                     <marquee width="100%" scrollamount="4" direction="right" height="100px">
                                         <div class="proctech001">
                                         <div class="protech1"><span id="proctech">HTML</span></div>
@@ -488,25 +492,25 @@
                                     </marquee>
                                 </div>
                                 <div class="btngl">
-                                    <a href="https://github.com/Md-Alqma/mahabis-clone" target="_blank"><button class="custom-btn btn-12"><span id="gtext1">Click
+                                    <a href="https://github.com/Md-Alqma/mahabis-clone" target="_blank" class="project-github-link"><button class="custom-btn btn-12"><span id="gtext1">Click
                                             </span><span id="gtext1">Github</span></button>
-                                    </a>
-                                    <a href="https://dreamy-frangipane-645120.netlify.app/" target="_blank"><button class="custom-btn btn-12"><span id="ltext1">Click
+                                    </a><!-- masai cypress class="project-github-link" -->
+                                    <a href="https://dreamy-frangipane-645120.netlify.app/" target="_blank" class="project-deployed-link"><button class="custom-btn btn-12"><span id="ltext1">Click
                                             </span><span id="ltext1">Live</span></button>
-                                    </a>
+                                    </a><!-- masai cypress class="project-deployed-link" -->
                                 </div>
                             </div>
                         </div>
 
                         <!-- project 2 -->
-                        <div class="projects">
+                        <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
                             <div class="procontent">
-                                <p id="procheading">My Fitnesspal imitation</p>
-                                <p id="proctext">Contributed to the front-end development and design of product item pages, item detail pages, and functionality filter,
+                                <p id="procheading" class="project-title">My Fitnesspal imitation</p><!-- masai cypress class="project-title" -->
+                                <p id="proctext" class="project-description">Contributed to the front-end development and design of product item pages, item detail pages, and functionality filter,
                                 search, sort for this web development project, utilizing skills in front-end web development, user interface design, and search
-                                functionality to create a user-friendly and efficient interface for product discovery and exploration.</p>
+                                functionality to create a user-friendly and efficient interface for product discovery and exploration.</p><!-- masai cypress class="project-description" -->
                                 <p id="proccollab">A collaborative project, built in 5 days by a team of 4 developers.</p>
-                                <div class="proctech0">
+                                <div class="proctech0" class="project-tech-stack"><!-- masai cypress class="project-tech-stack" -->
                                     <marquee width="100%" scrollamount="4" direction="left" height="100px">
                                         <div class="proctech001">
                                             <div class="protech1"><span id="proctech">HTML</span></div>
@@ -521,14 +525,14 @@
                                     </marquee>
                                 </div>
                                 <div class="btngl">
-                                    <a href="https://github.com/bewithkomalkumar/MyFitnessPal_Clone" target="_blank"><button class="custom-btn btn-12"><span
+                                    <a href="https://github.com/bewithkomalkumar/MyFitnessPal_Clone" target="_blank" class="project-github-link"><button class="custom-btn btn-12"><span
                                                 id="gtext1">Click
                                             </span><span id="gtext1">Github</span></button>
-                                    </a>
-                                    <a href="https://myfitnesspal1.netlify.app/" target="_blank"><button
+                                    </a><!-- masai cypress class="project-github-link" -->
+                                    <a href="https://myfitnesspal1.netlify.app/" target="_blank" class="project-deployed-link"><button
                                             class="custom-btn btn-12"><span id="ltext1">Click
                                             </span><span id="ltext1">Live</span></button>
-                                    </a>
+                                    </a><!-- masai cypress class="project-deployed-link" -->
                                 </div>
                             </div>
                             <div class="proframe">
@@ -538,18 +542,18 @@
                         </div>
 
                         <!-- project 3 -->
-                        <div class="projects">
+                        <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
                             <div class="proframe">
                                 <!-- <iframe id="iframe" src="https://papaya-empanada-e1f625.netlify.app/#"></iframe> -->
                                 <img id="posterPro" src="./assests/udemy poster.png"></img>
                             </div>
                             <div class="procontent">
-                                <p id="procheading">Udemy imitation</p>
-                                <p id="proctext">Contributed to the front-end development and design of the homepage, navbar, responsive design, carousel, and search bar
+                                <p id="procheading" class="project-title">Udemy imitation</p><!-- masai cypress class="project-title" -->
+                                <p id="proctext" class="project-description">Contributed to the front-end development and design of the homepage, navbar, responsive design, carousel, and search bar
                                 for a web development project, utilizing skills in front-end web development, user interface design, and responsive web
-                                design to create an intuitive and visually appealing user interface.</p>
+                                design to create an intuitive and visually appealing user interface.</p><!-- masai cypress class="project-description" -->
                                 <p id="proccollab">A collaborative project, built in 5 days by a team of 5 developers.</p>
-                                <div class="proctech0">
+                                <div class="proctech0" class="project-tech-stack"><!-- masai cypress class="project-tech-stack" -->
                                     <marquee width="100%" scrollamount="4" direction="right" height="100px">
                                         <div class="proctech001">
                                             <div class="protech1"><span id="proctech">HTML</span></div>
@@ -562,26 +566,26 @@
                                     </marquee>
                                 </div>
                                 <div class="btngl">
-                                    <a href="https://github.com/sonukryadav/Udemy-clone" target="_blank"><button class="custom-btn btn-12"><span id="gtext1">Click
+                                    <a href="https://github.com/sonukryadav/Udemy-clone" target="_blank" class="project-github-link"><button class="custom-btn btn-12"><span id="gtext1">Click
                                             </span><span id="gtext1">Github</span></button>
-                                    </a>
-                                    <a href="https://papaya-empanada-e1f625.netlify.app/#" target="_blank"><button class="custom-btn btn-12"><span id="ltext1">Click
+                                    </a><!-- masai cypress class="project-github-link" -->
+                                    <a href="https://papaya-empanada-e1f625.netlify.app/#" target="_blank" class="project-deployed-link"><button class="custom-btn btn-12"><span id="ltext1">Click
                                             </span><span id="ltext1">Live</span></button>
-                                    </a>
+                                    </a><!-- masai cypress class="project-deployed-link" -->
                                 </div>
                             </div>
                         </div>
 
                         <!-- project 4 -->
-                        <div class="projects">
+                        <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
                             <div class="procontent">
-                                <p id="procheading">TATA-1mg imitation</p>
-                                <p id="proctext">Contributed to the front-end development and design of the product page for a web development project, utilizing skills
+                                <p id="procheading" class="project-title">TATA-1mg imitation</p><!-- masai cypress class="project-title" -->
+                                <p id="proctext" class="project-description">Contributed to the front-end development and design of the product page for a web development project, utilizing skills
                                 in front-end web development, user interface design, and e-commerce functionality to create a user-friendly and
                                 efficient product page where users can view a single product, filter by brand, and sort by price or rating, while
-                                ensuring the page is completely responsive across different devices.</p>
+                                ensuring the page is completely responsive across different devices.</p><!-- masai cypress class="project-description" -->
                                 <p id="proccollab">A collaborative project, built in 5 days by a team of 5 developers.</p>
-                                <div class="proctech0">
+                                <div class="proctech0" class="project-tech-stack"><!-- masai cypress class="project-tech-stack" -->
                                     <marquee width="100%" scrollamount="4" direction="left" height="100px">
                                         <div class="proctech001">
                                             <div class="protech1"><span id="proctech">HTML</span></div>
@@ -593,14 +597,14 @@
                                     </marquee>
                                 </div>
                                 <div class="btngl">
-                                    <a href="https://github.com/Mr-raaz/1Mg_Clone_Project" target="_blank"><button class="custom-btn btn-12"><span
+                                    <a href="https://github.com/Mr-raaz/1Mg_Clone_Project" target="_blank" class="project-github-link"><button class="custom-btn btn-12"><span
                                                 id="gtext1">Click
                                         </span><span id="gtext1">Github</span></button>
-                                    </a>
-                                    <a href="https://celebrated-brioche-bea6c1.netlify.app/index.html" target="_blank"><button class="custom-btn btn-12"><span
+                                    </a><!-- masai cypress class="project-github-link" -->
+                                    <a href="https://celebrated-brioche-bea6c1.netlify.app/index.html" target="_blank" class="project-deployed-link"><button class="custom-btn btn-12"><span
                                                 id="ltext1">Click
                                         </span><span id="ltext1">Live</span></button>
-                                    </a>
+                                    </a><!-- masai cypress class="project-deployed-link" -->
                                 </div>
                             </div>
                             <div class="proframe">
@@ -668,14 +672,14 @@
             <p
                 style="display:block;font-size: 35px; font-weight: 900; text-align: center; padding: 10px; color:#ffffff; background-color: rgb(21,21,21);border-top-right-radius:10px;border-top-left-radius:10px; width:100%;margin:auto;">
                 My Github Calender</p>
-            <div class="calendar" style="background-color: rgb(21,21,21); width:100%;color:#ffffff; font-size: 24px; font-weight: 500;">
+            <div class="calendar" class="react-activity-calendar"  style="background-color: rgb(21,21,21); width:100%;color:#ffffff; font-size: 24px; font-weight: 500;"><!-- masai cypress class="react-activity-calendar" -->
                 <!-- Loading stuff -->
                 Loading the data just for you.
             </div>
             <div style="text-align: center;">
                 <div>
-                    <img src="https://github-readme-streak-stats.herokuapp.com?user=sonukryadav&theme=dark&date_format=M%20j%5B%2C%20Y%5D&type=png" />
-                    <picture>
+                    <img  id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=sonukryadav&theme=dark&date_format=M%20j%5B%2C%20Y%5D&type=png" /><!-- masai cypress  id="github-streak-stats" -->
+                    <picture id="github-stats-card"><!-- masai cypress  id="github-stats-card" -->
                         <source srcset="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true&theme=dark"
                             media="(prefers-color-scheme: dark)" />
                         <source srcset="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true"
@@ -687,8 +691,11 @@
 
 
             <div  style="text-align: center;">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sonukryadav&layout=compact&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" />
+                <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sonukryadav&layout=compact&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" /><!-- masai cypress  id="github-top-langs" -->
             </div>
+
+
+            <div><a href="https://github.com/sonukryadav"><button id="res3Git">Github</button></a></div>
 
 
             <!-- blog -->
