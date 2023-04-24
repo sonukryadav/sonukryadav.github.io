@@ -125,7 +125,7 @@ function scroll1() {
         scl.style.boxShadow = "none";
     }
 
-    skill
+    // skill
     if (h2 > skillS && h2 < resumeS) {
         let scl = document.querySelector("#skill");
         scl.style.color = "rgb(3, 188, 255)";
