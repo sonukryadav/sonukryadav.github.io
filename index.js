@@ -190,3 +190,50 @@ function scroll1() {
 
 
 };
+
+
+
+
+
+
+
+
+// certifications----------------
+// Optional: Add smooth scrolling behavior
+document.querySelectorAll('.scrollable').forEach(function (element) {
+    element.addEventListener('wheel', function (e) {
+        e.preventDefault();
+        element.scrollLeft += e.deltaY;
+    });
+});
+
+
+
+const scrollContainer = document.querySelector('.scrollable');
+const items = scrollContainer.querySelectorAll('.itemC');
+const itemWidth = items[0].offsetWidth;
+
+// Duplicate the items and append to the container
+items.forEach(item => {
+    const clone = item.cloneNode(true);
+    scrollContainer.appendChild(clone);
+});
+
+// Set the width of the container to fit all the items
+scrollContainer.style.width = `${itemWidth * items.length * 2}px`;
+
+// Set up the animation
+scrollContainer.style.animation = `scroll ${items.length * 8}s linear infinite`;
+
+// Define the animation keyframes
+const keyframes = `
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-${itemWidth * items.length}px); }
+`;
+const style = document.createElement('style');
+style.innerHTML = `
+  @keyframes scroll {
+    ${keyframes}
+  }
+`;
+document.head.appendChild(style);
