@@ -568,6 +568,13 @@ z-index: 1;
     background-color: rgb(255, 255, 255);
 }
 
+#posterProAndroid{
+    width: 32%;
+    margin: 0px 3px ;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
 #posterPro{
     width: 100%;
     height: 100%;
