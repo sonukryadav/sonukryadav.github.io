@@ -304,19 +304,3 @@
 </html>
 
 
-<!-- git stats -->
-<script>
-
-    function text() { };
-    GitHubCalendar(".calendar", "sonukryadav");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "sonukryadav", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "sonukryadav", {
-        proxy(sonukryadav) {
-            return fetch(`https://your-proxy.com/github?user=${sonukryadav}`)
-        }
-    }).then(r => r)
-</script>
