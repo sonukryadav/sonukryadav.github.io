@@ -5,292 +5,1371 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - Rahul-Raman</title>
-        <link rel="stylesheet" href="./css/index.css">
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <meta
+            content="Explore the portfolio, resume and other basic details about the 'Sonu Kumar Yadav' and contact him with a click"
+            name="description">
+        <meta
+            content="Sonukr, sonukr, sonu kumar yadav, sonu portfolio, sonu resume, sonu web, resume, biodata, contact sonu, full stack web developer, job "
+            name="keywords">
+
+
+        <!-- Glads -->
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6351710214347629"
+            crossorigin="anonymous"></script>
+
+
+        <!-- git stats -->
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+        </script>
         <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+        <!-- google icon link -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./sass.scss">
+
+        <!-- 3d chart -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <!------ favicons ------->
+        <link href="./assests/sonu-tree-bg-blur-color.png" rel="icon">
+        <link href="./assests/sonu-tree-bg-blur-color.png" rel="apple-touch-icon">
+        <!---xxx- favicons -xxx-->
+
+        <title>Sonukr's Webspace</title>
     </head>
 
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5V54SDR');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5H58GD3YTH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5H58GD3YTH');
+    </script>
+
     <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V54SDR" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <!-- background animation-- -->
+        <div class="bg-animation">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="stars4"></div>
+        </div>
+
+
+        <div class="main">
+
+            <div class="sidebar" id="nav-menu"> <!-- masai cypress id="nav-menu"-->
+
                 <div>
-                    <a href="./index.html" class="nav__logo">
-                        < Sonu />
-                    </a>
+                    <span id="closeMenu" onclick="sideClose()" class="material-symbols-outlined">close </span>
                 </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav-link home active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav-link about">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav-link skills">Skills</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav-link projects">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav-link contact">Contact</a></li>
-                        <li class="nav__item"><a
-                                href="https://drive.google.com/u/0/uc?id=1e9JxX3BCHuPBhs-v2Y0T_i0MKi3EpdLO&export=download"
-                                class="nav-link resume" id="resume-link-1"><button id="resume-button-1"
-                                    class="resume_button">Resume</button></a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-
-            <!--===== HOME =====-->
-            <section class="home_main bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sonu kumar yadav</span><br>Web
-                        Developer
-                    </h1>
-
-                    <a href="https://drive.google.com/u/0/uc?id=1e9JxX3BCHuPBhs-v2Y0T_i0MKi3EpdLO&export=download"
-                        id="resume-link-2">
-                        <button class="button" id="resume-button-2">Resume</button> </a>
-                </div>
-
-                <div class="home__social">
-                    <a href="mailto:rahulraman7070723@gmail.com" class="home__social-icon"><i
-                            class='bx bx-envelope'></i></a>
-                    <a href="https://www.linkedin.com/in/rahulramancoding/" target="_blank" class="home__social-icon"><i
-                            class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/rahul7070" target="_blank" class="home__social-icon"><i
-                            class='bx bxl-github'></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                <div class="sidebar-content">
 
 
-                        <image class="home__blob-img home-img" x="50" y="60" href="./img/pro-pic.png" src />
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
-                <div class="about__container bd-grid">
-                    <div>
-                        <h2 class="about__subtitle" id="user-detail-name">I'am Rahul Raman</h2>
-                        <p class="about__text" id="user-detail-intro">Hi, my name is Rahul Raman, and I am a Full Stack
-                            web developer with expertise in React, Node.js, Express, and MongoDB. I recently completed
-                            my Full Stack web development education and am excited to launch my career in web
-                            development. I have hands-on experience in developing full-stack web applications and am
-                            committed to delivering clean, efficient, and scalable code. I am passionate about web
-                            development and am always eager to learn new technologies and take on new challenges. If
-                            you're looking for a skilled Full Stack web developer who is dedicated to delivering
-                            high-quality code, please don't hesitate to get in touch with me.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-
-                    <div class="skills-card">
-                        <div class="skills__names">
-                            <i class='bx bxl-nodejs skills-card-img'></i>
-                            <span class="skills-card-name">NodeJS</span>
-                        </div>
+                    <div class="sideImg">
+                        <img id="simg1" src="./assests/sonu-tree-bg-blur-color.png" alt="sonu's pic">
                     </div>
 
-                    <div class="skills-card">
-                        <div class="skills__names">
-                            <i class='bx bx-code-alt skills-card-img'></i>
-                            <span class="skills-card-name">Express</span>
-                        </div>
+
+
+                    <div class="name1">
+                        <h2>Sonu Kumar Yadav</h2>
                     </div>
 
-                    <div class="skills-card">
-                        <div class="skills__names">
-                            <i class='bx bxs-data skills-card-img'></i>
-                            <span class="skills-card-name">MongoDB</span>
-                        </div>
-                    </div>
 
-                    <div class="skills-card">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills-card-img'></i>
-                            <span class="skills-card-name">HTML</span>
-                        </div>
-                    </div>
 
-                    <div class="skills-card">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills-card-img'></i>
-                            <span class="skills-card-name">CSS</span>
-                        </div>
-                    </div>
+                    <div class="socialLinks">
 
-                    <div class="skills-card">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills-card-img'></i>
-                            <span class="skills-card-name">JAVASCRIPT</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-card">
-                        <div class="skills__names">
-                            <i class='bx bxl-git skills__icon skills-card-img'></i>
-                            <span class="skills-card-name">Git</span>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <!--===== Projects =====-->
-            <section class="projects section" id="projects">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="project__container bd-grid">
-                    <div class="project-card">
-                        <img src="./img/tripoto_img.jpg" alt="">
-                        <div class="project_details">
-                            <h1 class="project-title">Tripoto Clone</h1>
-                            <h5 class="project-tech-stack">Node.js | Express | MongoDB | HTML | CSS | JavaScript</h5>
-                            <p class="project-description">Tripoto is a travel website that allows users to discover,
-                                plan, and share their travel experiences.</p><br>
-                            <a href="https://github.com/rahul7070/inquisitive-toy-7122" target="_blank"
-                                class="project-github-link"><i class='bx bxl-github skills__icon'></i></a>
-                            <a href="https://coruscating-piroshki-7e0fcc.netlify.app/" target="_blank"
-                                class="project-deployed-link"><i class='bx bx-link-external skills__icon'></i></a>
+                        <div class="iconShape" id="contact-linkedin"><!-- masai cypress id="contact-linkedin"-->
+                            <a id="links1" href="https://www.linkedin.com/in/sonu-kumar-yadav-0a609b180/"
+                                target="_blank" rel="noopener noreferrer nofollow">
+                                <img id="iconDesign" src="./assests/linkedin gif.gif" alt="linkedin">
+                            </a>
                         </div>
 
-                    </div>
-                    <div class="project-card">
-                        <img src="./img/kfc_jpg.jpg" alt="">
-                        <div class="project_details">
-                            <h1 class="project-title">KFC Clone</h1>
-                            <h5 class="project-tech-stack">HTML | CSS | JavaScript</h5>
-                            <p class="project-description">The KFC website is the online platform for customers to
-                                explore the menu, find restaurant locations, and order food online.</p><br>
-                            <a href="https://github.com/mayki21/descriptive-swing-4428" target="_blank"
-                                class="project-github-link"><i class='bx bxl-github skills__icon'></i></a>
-                            <a href="https://candid-axolotl-06ece3.netlify.app/" target="_blank"
-                                class="project-deployed-link"><i class='bx bx-link-external skills__icon'></i></a>
+                        <div class="iconShape" id="iconGit" id="contact-github">
+                            <!-- masai cypress id="contact-github"-->
+                            <a id="links1" href="https://github.com/sonukryadav" target="_blank"
+                                rel="noopener noreferrer nofollow">
+                                <img id="iconDesign" src="./assests/github gif.png" alt="github">
+                            </a>
                         </div>
 
-                    </div>
-                    <div class="project-card">
-                        <img src="./img/craftsvilla_img.jpg" alt="">
-                        <div class="project_details">
-                            <h1 class="project-title">Craftsvilla Clone</h1>
-                            <h5 class="project-tech-stack">HTML | CSS | JavaScript | JSON | API</h5>
-                            <p class="project-description">Craftsvilla offers an extensive collection of traditional
-                                clothing along with a variety of home decor items.</p><br>
-                            <a href="https://github.com/rahul7070/previous-sound-2568" target="_blank"
-                                class="project-github-link"><i class='bx bxl-github skills__icon'></i></a>
-                            <a href="https://superlative-tarsier-bc1827.netlify.app/" target="_blank"
-                                class="project-deployed-link"><i class='bx bx-link-external skills__icon'></i></a>
+                        <div class="iconShape">
+                            <a id="links1" href="https://twitter.com/SonuKr52616462" target="_blank"
+                                rel="noopener noreferrer nofollow">
+                                <img id="iconDesign" src="./assests/twitter gif.gif" alt="twitter">
+                            </a>
                         </div>
 
-                    </div>
-                    <div class="project-card">
-                        <img src="./img/fulll_stack_mini_project.png" alt="">
-                        <div class="project_details">
-                            <h1 class="project-title">Full Stack Mini Project</h1>
-                            <h5 class="project-tech-stack">Node.js | Express | MongoDB | HTML | CSS | JavaScript</h5>
-                            <p class="project-description">A basic mini project with register and login functionality
-                                with
-                                user-specific notes crud operations.
-                            </p><br>
-                            <a href="https://github.com/rahul7070/fullstack" target="_blank"
-                                class="project-github-link"><i class='bx bxl-github skills__icon'></i></a>
-                            <a href="#" _blank" class="project-deployed-link"><i
-                                    class='bx bx-link-external skills__icon'></i></a>
+                        <div class="iconShape">
+                            <a id="links1" href="https://www.instagram.com/sonukr.4/" target="_blank"
+                                rel="noopener noreferrer nofollow">
+                                <img id="iconDesign" src="./assests/instagram gif.gif" alt="instagram">
+                            </a>
                         </div>
 
+                        <div class="iconShape">
+                            <a id="links1" href="https://join.skype.com/invite/W7YCkaFCBcOJ" target="_blank"
+                                rel="noopener noreferrer nofollow">
+                                <img id="iconDesign" src="./assests/skype gif.webp" alt="skype">
+                            </a>
+                        </div>
+
+                        <!-- <div class="iconShape">
+                        <a id="links1" href="https://www.facebook.com/profile.php?id=100077394212665" target="_blank" rel="noopener noreferrer nofollow">
+                            <img id="iconDesign" src="./assests/facebook gif.gif" alt="facebook">
+                        </a>
+                    </div> -->
+
                     </div>
-                </div>
 
-                <div class="bd-grid stats">
 
-                    <a href="https://github.com/rahul7070" class="stats_card"><img id="github-streak-stats"
-                            src="https://github-readme-streak-stats.herokuapp.com?user=rahul7070" /></a>
-                    <a href="https://github.com/rahul7070" class="stats_card"><img id="github-stats-card"
-                            src="https://github-readme-stats.vercel.app/api?username=rahul7070" /></a>
-                    <a href="https://github.com/rahul7070" class="stats_card react-activity-calendar">
-                        Loading the data just for you.</a>
-                    <a href="https://github.com/rahul7070" class="stats_card"><img id="github-top-langs"
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahul7070" alt=""></a>
+
+
+                    <div class="sections1">
+
+                        <div>
+                            <a href="#" class="nav-link home"><!-- masai cypress class="nav-link home" -->
+                                <div class="sec2" id="home">
+                                    <div>
+                                        <span class="material-symbols-outlined">home</span>
+                                    </div>
+                                    <div>
+                                        <p>Home</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#abo1" class="nav-link about"><!-- masai cypress class="nav-link about" -->
+                                <div class="sec2" id="about" class="about section">
+                                    <!-- masai cypress class="about section" -->
+                                    <div>
+                                        <span class="material-symbols-outlined">person</span>
+                                    </div>
+                                    <div>
+                                        <p>About</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#ski1" class="nav-link skills"><!-- masai cypress class="nav-link skills" -->
+                                <div class="sec2" id="skill" id='skills'><!-- masai cypress id="skills" -->
+                                    <div>
+                                        <span class="material-symbols-outlined">person</span>
+                                    </div>
+                                    <div>
+                                        <p>Skills</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#res1" class="nav-link resume"><!-- masai cypress class="nav-link projects" -->
+                                <div class="sec2" id="resume">
+                                    <div>
+                                        <span class="material-symbols-outlined">description</span>
+                                    </div>
+                                    <div>
+                                        <p>Resume</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#pro1" class="nav-link projects"><!-- masai cypress class="nav-link projects" -->
+                                <div class="sec2" id="project" id="projects"><!-- masai cypress id="projects" -->
+                                    <div>
+                                        <span class="material-symbols-outlined">auto_stories</span>
+                                    </div>
+                                    <div>
+                                        <p>Project</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- <div>
+                        <a href="#blo1">
+                            <div class="sec2" id="blog">
+                                <div>
+                                    <span class="material-symbols-outlined">rss_feed</span>
+                                </div>
+                                <div>
+                                    <p>Blog</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+                        <div>
+                            <a href="#con0" class="nav-link contact"><!-- masai cypress class="nav-link projects" -->
+                                <div class="sec2" id="contact">
+                                    <div>
+                                        <span class="material-symbols-outlined">contact_mail</span>
+                                    </div>
+                                    <div>
+                                        <p>Contact</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div><a href="./assests/Sonu-Yadav-Resume.pdf" download><button id="res3sidebar">Download
+                                    Resume</button></a></div>
+
+                        <!-- flower -->
+                        <!-- <div class="flowerpot">
+                        <div>
+                            <img id="flow1" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow1" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow1" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                    </div> -->
+
+                    </div>
 
                 </div>
 
-            </section>
-
-
-    
-
-            <div class="react-activity-calendar" style="text-align: center;">
-                <div>
-                    <img id="github-streak-stats"
-                        src="https://github-readme-streak-stats.herokuapp.com?user=sonukryadav&theme=dark&date_format=M%20j%5B%2C%20Y%5D&type=png" /><!-- masai cypress  id="github-streak-stats" -->
-                    <picture id="github-stats-card"><!-- masai cypress  id="github-stats-card" -->
-                        <source srcset="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true&theme=dark"
-                            media="(prefers-color-scheme: dark)" />
-                        <source srcset="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true"
-                            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-                        <img src="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true" />
-                    </picture>
-                </div>
             </div>
-            <!-- random -->
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <div class="contact_details">
-                        <a href="mailto:rahulraman7070723@gmail.com" class="contact_tag">
-                            <i class='bx bx-envelope skills__icon'></i>
-                            <span id="contact-email">gf bdgf</span>
-                        </a>
-                        <a href="callto:+91-7070723189" class="contact_tag">
-                            <i class='bx bx-phone skills__icon'></i>
-                            <span id="contact-phone">fg fg</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/rahulramancoding/" target="_blank" class="contact_tag">
-                            <i class='bx bxl-linkedin skills__icon'></i>
-                            <span id="contact-linkedin">fdgbdfb</span>
-                        </a>
-                        <a href="https://github.com/rahul7070" target="_blank" class="contact_tag">
-                            <i class='bx bxl-github skills__icon'></i>
-                            <span id="contact-github">github.com/sonukryadav</span>
-                        </a>
+
+
+            <div class="rightBody">
+
+                <!-- bar icon -->
+                <div>
+                    <span id="menu" onclick="sideOpen()" class="material-symbols-outlined">menu</span>
+                </div>
+
+                <!-- first box -->
+                <div class="topB">
+
+                    <div class="text1">
+                        <h1>I am a <span class="type"></span></h1>
+                    </div>
+
+                    <div class="imgdiv1">
+                        <img id="imgs2" src="./assests/sonu-tree-bg-removed-blackAndWhite.png" alt="sonu's pic"
+                            class="home-img"><!-- masai cypress class="home-img" -->
+                        <h1 id="text0" id="user-detail-name">Sonu Kumar Yadav</h1>
+                        <!-- masai cypress id="user-detail-name" -->
+                    </div>
+
+                </div>
+
+
+                <!-- second box -->
+                <div class="about1">
+
+                    <h1 id="abo1">About</h1>
+
+                    <p id="abo2" id="user-detail-intro"><!-- masai cypress id="user-detail-name" -->
+
+                        <!-- Hello and welcome to my web space! I'm Sonu Kumar Yadav, and I'm thrilled that you're here.
+                    Thank You. -->
+                    <p id="aboutText0" style="color:#237BFF;margin-top: 30px;">I'm <span style="color:#F08C35">Sonu
+                            kumar Yadav,</span> React Native & MERN Stack Developer
+                        from Uttar Pradesh, India.</p><br>
+
+                    <p id="aboutText1" style="color:white;">As a fresh <span style="color:#237BFF">React Native
+                            developer</span>, I'm excited to dive headfirst into the world of
+                        mobile app development. I may be new to this field, but don't let that fool you - I'm armed with
+                        the <span style="color:#237BFF">latest coding techniques and a passion</span> for creating
+                        applications that will knock
+                        your socks off.<br><br>
+                        With <span style="color:#237BFF">React Native</span>, I can build apps that run on both <span
+                            style="color:#F08C35">iOS</span> and <span style="color:#F08C35">Android</span> platforms,
+                        which means I get to
+                        be a superhero without the cape. From <span style="color:#237BFF">designing sleek UIs</span> to
+                        <span style="color:#237BFF">integrating APIs</span>, I am eager to flex my coding muscles and
+                        create something truly
+                        unique.<br><br>
+                        I am always on the lookout for opportunities to collaborate and learn from others. After all,
+                        <span style="color:#237BFF">coding is a team sport</span>, and I'm ready to be a <span
+                            style="color:#F08C35">team
+                            player</span>. So let's work together to build something awesome and leave a lasting mark on
+                        the world of mobile
+                        app development.<br><br>
+                        Thank you.
+                    </p>
+                    </p>
+
+                    <div class="abo3u">
+                        <div class="abo3u2">
+                            <div>
+                                <span id="abo3u3">➡️ Education:</span>
+                                <span id="abo3u4">B.Tech.(2022)</span>
+                            </div>
+                            <div>
+                                <span id="abo3u3">➡️ Training: </span>
+                                <span id="abo3u4">Masai School (React Native)</span>
+                            </div>
+                            <div>
+                                <span id="abo3u3">➡️ Age:</span>
+                                <span id="abo3u4">24 years</span>
+                            </div>
+                            <div>
+                                <span id="abo3u3">➡️ Freelance:</span>
+                                <span id="abo3u4">Available</span>
+                            </div>
+                        </div>
+
+                        <div class="abo3u2">
+                            <div>
+                                <span id="abo3u3">➡️ Phone:</span>
+                                <span id="abo3u4" id="contact-phone">+91 9628407182</span>
+                                <!-- masai cypress  id="contact-phone" -->
+                            </div>
+                            <div>
+                                <span id="abo3u3">➡️ State:</span>
+                                <span id="abo3u4">U.P., India</span>
+                            </div>
+                            <div>
+                                <span id="abo3u3">➡️ Birthday:</span>
+                                <span id="abo3u4">1998</span>
+                            </div>
+                            <div>
+                                <span id="abo3u3">➡️ Email:</span>
+                                <span id="abo3u4" id="contact-email"><a
+                                        style="text-decoration: underline;color:rgb(255, 255, 255)"
+                                        href="mailto:sonukryadav56@gmail.com">sonukryadav56@gmail.com</a></span><!-- masai cypress   id="contact-email" -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- skills -->
+
+                <div class="skill1">
+
+                    <h1 id="ski1">Skills</h1>
+
+                    <div class="ski2">
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/html.png" alt="HTML"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">HTML5</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/css.png" alt="CSS"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">CSS</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/sass.png" alt="SASS"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">SASS</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/javascript.png" alt="JS(Es6)"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">JS(ES6)</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <!-- <div>
+                        <img id="techlogo" src="./techStackLogo/Ajax.png" alt="Ajax"/>
+                        <p id="lname">AJAX</p>
+                    </div> -->
+
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/JSON.jpg" alt="JSON"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">JSON</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/JAVA.webp" alt="JAVA"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">JAVA</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/Reactjs.png" alt="React"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">REACT NATIVE & JS</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/redux.png" alt="Redux"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">REDUX</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/git.png" alt="Git"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">GIT/GITHUB</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/restapi.png" alt="RESTful API"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">RESTful API</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/mongodb.svg" alt="RESTful API"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">MongoDB</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/nodejs.svg" alt="RESTful API"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">NodeJs</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/firebase.png" alt="firebase image"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">FIREBASE</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/MATERIAL UI.png" alt="Material ui"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">MATERIAL UI</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/CHAKRAUI.jpg" alt="Chakra ui"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">CHAKRA UI</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/DSA.png" alt="DSA"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">DSA</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <div>
+                            <img id="techlogo" src="./techStackLogo/bootstrap-logo.png" alt="bootstrap"
+                                class="skills-card-img" /><!-- masai cypress  class="skills-card-img" -->
+                            <p id="lname" class="skills-card-name">BOOTSTRAP</p>
+                            <!-- masai cypress  class="skills-card-name" -->
+                        </div>
+                        <!-- <div><img id="techlogo" src="" alt="" /></div> -->
+                    </div>
+
+                </div>
+
+                <div id="myPlot"></div>
+
+                <!-- <div id="myPlot">
+                    <a href="http://www.github.com/sonukryadav"><img
+                    src="https://github-readme-activity-graph.cyclic.app/graph?username=sonukryadav&bg_color=1c1917&color=ffffff&line=0891b2&point=ffffff&area_color=1c1917&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph"
+                    alt="GitHub Commits Graph" /></a>
+            </div> -->
+
+
+
+                <!-- certification -->
+
+
+                <div class="certification">
+                    <h1 id="certy">Certifications</h1>
+                    <div class="scrollable">
+                        <div class="itemC">
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/musichub2.appspot.com/o/Docs%20-%20Personal%2FfreeCodeCamp%2FAPI%20-%20freeCodeCamp.png?alt=media&token=a2566f5a-7cd1-4011-a860-0a9a5e874a02">
+                            <div class="text-box">
+                                <a id="tstBox1"
+                                    href="https://drive.google.com/file/d/10w2AwsNlCHkh83p9p1MLg3DWq-hIx_M_/view?usp=share_link"
+                                    target="_blank">
+                                    <p id="tstBox2">Back End Development and APIs</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemC">
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/musichub2.appspot.com/o/Docs%20-%20Personal%2FNPTEL%2Fprogramming%20in%20java%20-%20NPTEL%20.jpg?alt=media&token=c43666e2-b319-4677-a280-eebafeb01ec8">
+                            <div class="text-box">
+                                <a id="tstBox1"
+                                    href="https://drive.google.com/file/d/1vggmy9jYK9VDdUA_1_on7Qy2xwf9ZfqL/view?usp=share_link"
+                                    target="_blank">
+                                    <p id="tstBox2">Programming in Java</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemC">
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/musichub2.appspot.com/o/Docs%20-%20Personal%2FNPTEL%2FIntroduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things%20-%20NPTEL.jpg?alt=media&token=4f0c3e94-1d76-441b-adfe-71f2653ce545">
+                            <div class="text-box">
+                                <a id="tstBox1"
+                                    href="https://drive.google.com/file/d/1uVVpj5I_riw0u580rGO0GqZBM3OXa984/view?usp=share_link"
+                                    target="_blank">
+                                    <p id="tstBox2">Introduction to Industry 4.0 and Industrial IoT</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemC">
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/musichub2.appspot.com/o/Docs%20-%20Personal%2FNPTEL%2Fspeaking%20effectively%20-%20NPTEL.jpg?alt=media&token=b2830d3c-2dcc-4b2d-94fe-2f032df6625a">
+                            <div class="text-box">
+                                <a id="tstBox1"
+                                    href="https://drive.google.com/file/d/1iXNyd7LpKGn1svRqemkiNIFtO6zHatw0/view?usp=share_link"
+                                    target="_blank">
+                                    <p id="tstBox2">Speaking Effectively</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemC">
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/musichub2.appspot.com/o/Docs%20-%20Personal%2FNPTEL%2FEmotional%20intelligence%20-%20NPTEL.jpg?alt=media&token=0995023f-2114-4ed2-8347-9ba8ea50767f">
+                            <div class="text-box">
+                                <a id="tstBox1"
+                                    href="https://drive.google.com/file/d/10WTePk4gMR6geAsJsJJu5_DDRCBYBCHX/view?usp=share_link"
+                                    target="_blank">
+                                    <p id="tstBox2">Emotional Intelligence</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemC">
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/musichub2.appspot.com/o/Docs%20-%20Personal%2FNPTEL%2FEnhancing%20soft%20skill%20NPTEL%20-%20NPTEL.jpg?alt=media&token=fe25cf1c-0489-43a5-b672-7ca58496d547">
+                            <div class="text-box">
+                                <a id="tstBox1"
+                                    href="https://drive.google.com/file/d/1N6FXHsJ2c1cuTxF4kkuBkGaDi9JDJAXr/view?usp=share_link"
+                                    target="_blank">
+                                    <p id="tstBox2">Enhancing Soft Skills & Personality</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemC">
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/musichub2.appspot.com/o/Docs%20-%20Personal%2FNPTEL%2Fdeveloping%20soft%20skill%20nptel%20result%20-%20NPTEL.jpg?alt=media&token=22f63f09-486b-4faf-a39c-43f24e4f9c98">
+                            <div class="text-box">
+                                <a id="tstBox1"
+                                    href="https://drive.google.com/file/d/1N1QSxmyAl5T0itUnSs3pmwq2H3-bkcAj/view?usp=share_link"
+                                    target="_blank">
+                                    <p id="tstBox2">Developing Soft Skills & Personality</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemC">
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/musichub2.appspot.com/o/Docs%20-%20Personal%2FNPTEL%2FBEC%20certificate%20(1).jpg?alt=media&token=8880dfc1-d46f-4516-89c7-57d5798b530a">
+                            <div class="text-box">
+                                <a id="tstBox1"
+                                    href="https://drive.google.com/file/d/1hdftzrkM8BNWc63CWgcTLqPIDSrkMbcz/view?usp=share_link"
+                                    target="_blank">
+                                    <p id="tstBox2">Business English Certificate (B1 level)</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Sonu kr</p>
-            <p class="footer__copy">&#169;  All rigths reserved</p>
-        </footer>
 
-        <!-- ///jdfkndjfs -->
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+                <!-- certification -->
 
-        <!--===== MAIN JS =====-->
-        <script src="./js/index.js"></script>
 
-        <!-- ===== GITHUB CALENDER ===== -->
+
+                <!-- resume -->
+                <div class="resume1">
+
+                    <h1 id="res1">Resume</h1>
+
+                    <div class="res2p">
+                        <!-- <img id="res2" src="./assests/Sonu-Yadav-Resume-Image.jpg" alt="resume"> -->
+                        <iframe src="./assests/Sonu-Yadav-Resume.pdf" width="70%" height="600px" name="Sonu's resume"
+                            style="display: block; margin:auto; border:1px solid black;" loading="eager">
+                        </iframe>
+                    </div>
+
+                    <div><a href="./assests/Sonu-Yadav-Resume.pdf" download><button id="res3"
+                                id="resume-button-1">Download Resume</button></a></div>
+                    <!-- masai cypress id="resume-button-1" -->
+                    <div><button id="res3" id="resume-button-2"
+                            style="background-image: linear-gradient(90deg, rgba(36,0,0,1) 16%, rgba(54,54,98,1) 57%, rgba(52,140,158,1) 100%); margin-top: 35px;"
+                            onclick="window.open('https://drive.google.com/file/d/122KRQEnSWFU3YnfyHmoRQzkeEqHuQ3b0/view?usp=share_link', '_blank')">Open
+                            in a new tab</button></div>
+                    <!-- masai cypress id="resume-button-2" -->
+                </div>
+
+
+
+
+
+                <!--projects -->
+                <div class="project1">
+
+                    <h1 id="pro1">Projects</h1>
+
+
+                    <div>
+                        <img src="./assests/android_apps.png" alt="Web Apps"
+                            style="display: block; margin: auto; width: 300px; height: 300px;" />
+                    </div>
+
+                    <!-- Android projects -->
+                    <div class"pro">
+                        <div>
+
+                            <!-- Android project-1 -->
+                            <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
+
+                                <div class="proframe">
+                                    <!-- <iframe id="iframe" src="https://dreamy-frangipane-645120.netlify.app/"></iframe> -->
+                                    <div style="display: flex; margin: auto;">
+                                        <img id="posterProAndroid" src="./assests/MusicHub-img1.jpg"></img>
+                                        <img id="posterProAndroid" src="./assests/MusicHub-img2.jpg"></img>
+                                        <img id="posterProAndroid" src="./assests/MusicHub-img3.jpg"></img>
+                                        <!-- <img id="posterProAndroid" src="./assests/mahabis poster.png"></img> -->
+                                    </div>
+                                </div>
+
+                                <div class="procontent">
+                                    <p id="procheading" class="project-title">MusicHub App</p>
+                                    <!-- masai cypress class="project-title" -->
+                                    <p id="proccollab" style="margin-top: 12px;">Individual project</p>
+                                    <p id="proctext" class="project-description">
+                                        Designed and developed a music player app using React Native.<span id="lineSep">
+                                            |</span>
+                                        Implemented email-password authentication, OTP verification, and Google
+                                        authentication for user login and registration.<span id="lineSep"> |</span>
+                                        Enabled users to listen to songs online and play local audio files on their
+                                        device.<span id="lineSep"> |</span>
+                                        Added search functionality to allow users to easily find and listen to their
+                                        favorite songs.<span id="lineSep"> |</span>
+                                        Integrated a theme switching feature to enable users to personalize their app
+                                        experience and many more.
+                                    </p>
+                                    <!-- masai cypress class="project-description" -->
+                                    <p id="proccollab">-: Skills Utilized :-</p>
+                                    <div class="proctech0" class="project-tech-stack">
+                                        <!-- masai cypress class="project-tech-stack" -->
+                                        <marquee width="100%" scrollamount="4" direction="left" height="100px">
+                                            <div class="proctech001">
+                                                <div class="protech1"><span id="proctech">React</span></div>
+                                                <div class="protech1"><span id="proctech">React Native</span></div>
+                                                <div class="protech1"><span id="proctech">Redux-Toolkit</span></div>
+                                                <div class="protech1"><span id="proctech">JS(ES6)</span></div>
+                                                <div class="protech1"><span id="proctech">Firebase</span></div>
+                                                <div class="protech1"><span id="proctech">Async Storage</span></div>
+                                                <div class="protech1"><span id="proctech">Yoga Layout</span></div>
+                                                <div class="protech1"><span id="proctech">HTML5</span></div>
+                                                <div class="protech1"><span id="proctech">CSS</span></div>
+                                                <div class="protech1"><span id="proctech">APIs</span></div>
+                                            </div>
+                                        </marquee>
+                                    </div>
+                                    <div class="btngl">
+                                        <a href="https://github.com/sonukryadav/MusicHub" target="_blank"
+                                            class="project-github-link"><button class="custom-btn btn-12"><span
+                                                    id="gtext1">Click
+                                                </span><span id="gtext1">Github</span></button>
+                                        </a><!-- masai cypress class="project-github-link" -->
+                                        <a href="https://drive.google.com/file/d/18WJF7Exc0_gnMt5IyW7tq2fd91rfVel4/view?usp=share_link"
+                                            target="_blank" class="project-deployed-link"><button
+                                                class="custom-btn btn-12"><span id="ltext1">Click
+                                                </span><span id="ltext1">APK</span></button>
+                                        </a><!-- masai cypress class="project-deployed-link" -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Android project-2 -->
+                            <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
+
+                                <div class="procontent">
+                                    <p id="procheading" class="project-title">TaskMaster App</p>
+                                    <!-- masai cypress class="project-title" -->
+                                    <p id="proccollab" style="margin-top: 12px;">Individual project</p>
+                                    <p id="proctext" class="project-description">Taskmaster - A task management
+                                        application built using React, Expo, JavaScript, and other libraries. The
+                                        application
+                                        allows users to save tasks with time and date and edit them as needed.
+                                        Strengthened skills in building responsive user interfaces and integrating
+                                        multiple libraries. Excited to apply this
+                                        experience to contribute to your team as a React developer.</p>
+                                    <!-- masai cypress class="project-description" -->
+                                    <p id="proccollab">-: Skills Utilized :-</p>
+                                    <div class="proctech0" class="project-tech-stack">
+                                        <!-- masai cypress class="project-tech-stack" -->
+                                        <marquee width="100%" scrollamount="4" direction="left" height="100px">
+                                            <div class="proctech001">
+                                                <div class="protech1"><span id="proctech">React</span></div>
+                                                <div class="protech1"><span id="proctech">React Native</span></div>
+                                                <div class="protech1"><span id="proctech">JS(ES6)</span></div>
+                                                <div class="protech1"><span id="proctech">Expo</span></div>
+                                                <div class="protech1"><span id="proctech">SQLite</span></div>
+                                                <div class="protech1"><span id="proctech">JSON</span></div>
+                                                <div class="protech1"><span id="proctech">Yoga Layout</span></div>
+                                                <div class="protech1"><span id="proctech">Few npm packages</span></div>
+                                            </div>
+                                        </marquee>
+                                    </div>
+                                    <div class="btngl">
+                                        <a href="https://github.com/sonukryadav/TaskMaster" target="_blank"
+                                            class="project-github-link"><button class="custom-btn btn-12"><span
+                                                    id="gtext1">Click
+                                                </span><span id="gtext1">Github</span></button>
+                                        </a><!-- masai cypress class="project-github-link" -->
+                                        <a href="https://drive.google.com/file/d/1J29ixfLxJ2Ep-5VpFPB18DBAwgaOKKE4/view?usp=share_link"
+                                            target="_blank" class="project-deployed-link"><button
+                                                class="custom-btn btn-12"><span id="ltext1">Click
+                                                </span><span id="ltext1">APK</span></button>
+                                        </a><!-- masai cypress class="project-deployed-link" -->
+                                    </div>
+                                </div>
+
+                                <div class="proframe">
+                                    <!-- <iframe id="iframe" src="https://dreamy-frangipane-645120.netlify.app/"></iframe> -->
+                                    <div style="display: flex; margin: auto;">
+                                        <img id="posterProAndroid" src="./assests/TaskMaster-img1.jpg"></img>
+                                        <img id="posterProAndroid" src="./assests/TaskMaster-img2.jpg"></img>
+                                        <img id="posterProAndroid" src="./assests/TaskMaster-img3.jpg"></img>
+                                        <!-- <img id="posterProAndroid" src="./assests/mahabis poster.png"></img> -->
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Android project-3 -->
+                            <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
+
+                                <div class="proframe">
+                                    <!-- <iframe id="iframe" src="https://dreamy-frangipane-645120.netlify.app/"></iframe> -->
+                                    <div style="display: flex; margin: auto;">
+                                        <img id="posterProAndroid" src="./assests/calculator-img1.jpg"></img>
+                                        <img id="posterProAndroid" src="./assests/calculator-img2.jpg"></img>
+                                        <img id="posterProAndroid" src="./assests/calculator-img3.jpg"></img>
+                                        <!-- <img id="posterProAndroid" src="./assests/mahabis poster.png"></img> -->
+                                    </div>
+                                </div>
+
+                                <div class="procontent">
+                                    <p id="procheading" class="project-title">Calculator App</p>
+                                    <!-- masai cypress class="project-title" -->
+                                    <p id="proccollab" style="margin-top: 12px;">Individual project</p>
+                                    <p id="proctext" class="project-description">Calculator App - Developed a basic
+                                        calculator using React, Expo, and JavaScript. Implemented a user-friendly
+                                        interface
+                                        using Yoga Layout. The app allows users to perform basic mathematical
+                                        calculations.
+                                        Optimized the app's performance by implementing efficient algorithms and
+                                        minimizing unnecessary re-renders.
+                                        Improved my knowledge of React and JavaScript while working on the project.</p>
+                                    <!-- masai cypress class="project-description" -->
+                                    <p id="proccollab">-: Skills Utilized :-</p>
+                                    <div class="proctech0" class="project-tech-stack">
+                                        <!-- masai cypress class="project-tech-stack" -->
+                                        <marquee width="100%" scrollamount="4" direction="left" height="100px">
+                                            <div class="proctech001">
+                                                <div class="protech1"><span id="proctech">React</span></div>
+                                                <div class="protech1"><span id="proctech">React Native</span></div>
+                                                <div class="protech1"><span id="proctech">JS(ES6)</span></div>
+                                                <div class="protech1"><span id="proctech">Expo</span></div>
+                                                <div class="protech1"><span id="proctech">Async Storage</span></div>
+                                                <div class="protech1"><span id="proctech">Yoga Layout</span></div>
+                                            </div>
+                                        </marquee>
+                                    </div>
+                                    <div class="btngl">
+                                        <a href="https://github.com/sonukryadav/react-native/tree/main/w2/Assignment/calculator"
+                                            target="_blank" class="project-github-link"><button
+                                                class="custom-btn btn-12"><span id="gtext1">Click
+                                                </span><span id="gtext1">Github</span></button>
+                                        </a><!-- masai cypress class="project-github-link" -->
+                                        <a href="https://drive.google.com/file/d/1FT6Iyc-_IDyB1IKNGgAoWMZO10ojbRXd/view?usp=share_link"
+                                            target="_blank" class="project-deployed-link"><button
+                                                class="custom-btn btn-12"><span id="ltext1">Click
+                                                </span><span id="ltext1">APK</span></button>
+                                        </a><!-- masai cypress class="project-deployed-link" -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- -------------------------------------------------------------------------- -->
+
+
+                    <!-- web projects -->
+
+                    <div>
+                        <img src="./assests/web_apps.png" alt="Web Apps"
+                            style="display: block; margin: auto; width: 300px; height: 300px;" />
+                    </div>
+                    <!-- <hr/> -->
+
+                    <div class="pro2">
+                        <div>
+                            <!-- web project 1 -->
+                            <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
+
+                                <div class="procontent">
+                                    <p id="procheading" class="project-title">Mahabis imitation</p>
+                                    <!-- masai cypress class="project-title" -->
+                                    <p id="proccollab" style="margin-top: 12px;">A collaborative project, built in 5
+                                        days by a team of 4 developers.</p>
+                                    <p id="proctext" class="project-description">Contributed to the development of
+                                        authentication functionality and UI
+                                        for this project, utilizing skills in authentication
+                                        protocols, security measures, and user access management to ensure secure access
+                                        control and protect user data
+                                        with firebase.</p><!-- masai cypress class="project-description" -->
+                                    <p id="proccollab">-: Skills utilized :- </p>
+                                    <div class="proctech0" class="project-tech-stack">
+                                        <!-- masai cypress class="project-tech-stack" -->
+                                        <marquee width="100%" scrollamount="4" direction="left" height="100px">
+                                            <div class="proctech001">
+                                                <div class="protech1"><span id="proctech">HTML</span></div>
+                                                <div class="protech1"><span id="proctech">CSS</span></div>
+                                                <div class="protech1"><span id="proctech">JS(ES6)</span></div>
+                                                <div class="protech1"><span id="proctech">React</span></div>
+                                                <div class="protech1"><span id="proctech">Redux</span></div>
+                                                <div class="protech1"><span id="proctech">JSON</span></div>
+                                                <div class="protech1"><span id="proctech">Firebase</span></div>
+                                                <div class="protech1"><span id="proctech">Chakra Ui</span></div>
+                                                <div class="protech1"><span id="proctech">Material UI</span></div>
+                                            </div>
+                                        </marquee>
+                                    </div>
+                                    <div class="btngl">
+                                        <a href="https://github.com/Md-Alqma/mahabis-clone" target="_blank"
+                                            class="project-github-link"><button class="custom-btn btn-12"><span
+                                                    id="gtext1">Click
+                                                </span><span id="gtext1">Github</span></button>
+                                        </a><!-- masai cypress class="project-github-link" -->
+                                        <a href="https://dreamy-frangipane-645120.netlify.app/" target="_blank"
+                                            class="project-deployed-link"><button class="custom-btn btn-12"><span
+                                                    id="ltext1">Click
+                                                </span><span id="ltext1">Live</span></button>
+                                        </a><!-- masai cypress class="project-deployed-link" -->
+                                    </div>
+                                </div>
+                                <div class="proframe">
+                                    <!-- <iframe id="iframe" src="https://dreamy-frangipane-645120.netlify.app/"></iframe> -->
+                                    <img id="posterPro" src="./assests/mahabis poster.png"></img>
+                                </div>
+                            </div>
+
+                            <!--web project 2 -->
+                            <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
+                                <div class="proframe">
+                                    <!-- <iframe id="iframe" src="https://dreamy-frangipane-645120.netlify.app/"></iframe> -->
+                                    <img id="posterPro" src="./assests/blogPost.png"></img>
+                                </div>
+                                <div class="procontent">
+                                    <p id="procheading" class="project-title">BlogPost</p>
+                                    <!-- masai cypress class="project-title" -->
+                                    <p id="proccollab" style="margin-top: 12px;">Individual project</p>
+                                    <p id="proctext" class="project-description">Developed authentication, create post,
+                                        edit post, delete post, like and comment on post functionality,
+                                        UI and logics for this project, utilizing skills in authentication
+                                        protocols, security measures, and user access management to ensure secure access
+                                        control and protect user
+                                        data.</p><!-- masai cypress class="project-description" -->
+                                    <p id="proccollab">-: Skills utilized :-</p>
+                                    <div class="proctech0" class="project-tech-stack">
+                                        <!-- masai cypress class="project-tech-stack" -->
+                                        <marquee width="100%" scrollamount="4" direction="right" height="100px">
+                                            <div class="proctech001">
+                                                <div class="protech1"><span id="proctech">HTML</span></div>
+                                                <div class="protech1"><span id="proctech">CSS</span></div>
+                                                <div class="protech1"><span id="proctech">JS(ES6)</span></div>
+                                                <div class="protech1"><span id="proctech">React</span></div>
+                                                <div class="protech1"><span id="proctech">React-Redux</span></div>
+                                                <div class="protech1"><span id="proctech">JSON</span></div>
+                                                <div class="protech1"><span id="proctech">Material UI</span></div>
+                                                <div class="protech1"><span id="proctech">MongoDB</span></div>
+                                                <div class="protech1"><span id="proctech">Mongoose</span></div>
+                                                <div class="protech1"><span id="proctech">Express</span></div>
+                                                <div class="protech1"><span id="proctech">JsonWebToken</span></div>
+                                            </div>
+                                        </marquee>
+                                    </div>
+                                    <div class="btngl">
+                                        <a href="https://github.com/sonukryadav/Blogpost" target="_blank"
+                                            class="project-github-link"><button class="custom-btn btn-12"><span
+                                                    id="gtext1">Click
+                                                </span><span id="gtext1">Github</span></button>
+                                        </a><!-- masai cypress class="project-github-link" -->
+                                        <a href="https://blogpost2.netlify.app/posts" target="_blank"
+                                            class="project-deployed-link"><button class="custom-btn btn-12"><span
+                                                    id="ltext1">Click
+                                                </span><span id="ltext1">Live</span></button>
+                                        </a><!-- masai cypress class="project-deployed-link" -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- web project 3 -->
+                            <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
+                                <div class="procontent">
+                                    <p id="procheading" class="project-title">My Fitnesspal imitation</p>
+                                    <!-- masai cypress class="project-title" -->
+                                    <p id="proccollab" style="margin-top: 12px;">A collaborative project, built in 5
+                                        days by a team of 4 developers.</p>
+                                    <p id="proctext" class="project-description">Contributed to the front-end
+                                        development and design of product item pages, item detail pages, and
+                                        functionality filter,
+                                        search, sort for this web development project, utilizing skills in front-end web
+                                        development, user interface design, and search
+                                        functionality to create a user-friendly and efficient interface for product
+                                        discovery and exploration.</p><!-- masai cypress class="project-description" -->
+                                    <p id="proccollab">-: Skills utilized :-</p>
+                                    <div class="proctech0" class="project-tech-stack">
+                                        <!-- masai cypress class="project-tech-stack" -->
+                                        <marquee width="100%" scrollamount="4" direction="left" height="100px">
+                                            <div class="proctech001">
+                                                <div class="protech1"><span id="proctech">HTML</span></div>
+                                                <div class="protech1"><span id="proctech">CSS</span></div>
+                                                <div class="protech1"><span id="proctech">JS(ES6)</span></div>
+                                                <div class="protech1"><span id="proctech">React</span></div>
+                                                <div class="protech1"><span id="proctech">Redux</span></div>
+                                                <div class="protech1"><span id="proctech">JSON</span></div>
+                                                <div class="protech1"><span id="proctech">Chakra Ui</span></div>
+                                                <div class="protech1"><span id="proctech">Material UI</span></div>
+                                            </div>
+                                        </marquee>
+                                    </div>
+                                    <div class="btngl">
+                                        <a href="https://github.com/bewithkomalkumar/MyFitnessPal_Clone" target="_blank"
+                                            class="project-github-link"><button class="custom-btn btn-12"><span
+                                                    id="gtext1">Click
+                                                </span><span id="gtext1">Github</span></button>
+                                        </a><!-- masai cypress class="project-github-link" -->
+                                        <a href="https://myfitnesspal1.netlify.app/" target="_blank"
+                                            class="project-deployed-link"><button class="custom-btn btn-12"><span
+                                                    id="ltext1">Click
+                                                </span><span id="ltext1">Live</span></button>
+                                        </a><!-- masai cypress class="project-deployed-link" -->
+                                    </div>
+                                </div>
+                                <div class="proframe">
+                                    <!-- <iframe id="iframe" src="https://myfitnesspal1.netlify.app/"></iframe> -->
+                                    <img id="posterPro" src="./assests/fitness pal poster.png"></img>
+                                </div>
+                            </div>
+
+                            <!-- web project 4 -->
+                            <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
+                                <div class="proframe">
+                                    <!-- <iframe id="iframe" src="https://papaya-empanada-e1f625.netlify.app/#"></iframe> -->
+                                    <img id="posterPro" src="./assests/udemy poster.png"></img>
+                                </div>
+                                <div class="procontent">
+                                    <p id="procheading" class="project-title">Udemy imitation</p>
+                                    <!-- masai cypress class="project-title" -->
+                                    <p id="proccollab" style="margin-top: 12px;">A collaborative project, built in 5
+                                        days by a team of 5 developers.</p>
+                                    <p id="proctext" class="project-description">Contributed to the front-end
+                                        development and design of the homepage, navbar, responsive design, carousel, and
+                                        search bar
+                                        for a web development project, utilizing skills in front-end web development,
+                                        user interface design, and responsive web
+                                        design to create an intuitive and visually appealing user interface.</p>
+                                    <!-- masai cypress class="project-description" -->
+                                    <p id="proccollab">-: Skills utilized :-</p>
+                                    <div class="proctech0" class="project-tech-stack">
+                                        <!-- masai cypress class="project-tech-stack" -->
+                                        <marquee width="100%" scrollamount="4" direction="right" height="100px">
+                                            <div class="proctech001">
+                                                <div class="protech1"><span id="proctech">HTML</span></div>
+                                                <div class="protech1"><span id="proctech">CSS</span></div>
+                                                <div class="protech1"><span id="proctech">JS(ES6)</span></div>
+                                                <div class="protech1"><span id="proctech">JSON</span></div>
+                                                <div class="protech1"><span id="proctech">Local Storage</span></div>
+                                                <div class="protech1"><span id="proctech">API</span></div>
+                                            </div>
+                                        </marquee>
+                                    </div>
+                                    <div class="btngl">
+                                        <a href="https://github.com/sonukryadav/Udemy-clone" target="_blank"
+                                            class="project-github-link"><button class="custom-btn btn-12"><span
+                                                    id="gtext1">Click
+                                                </span><span id="gtext1">Github</span></button>
+                                        </a><!-- masai cypress class="project-github-link" -->
+                                        <a href="https://papaya-empanada-e1f625.netlify.app/#" target="_blank"
+                                            class="project-deployed-link"><button class="custom-btn btn-12"><span
+                                                    id="ltext1">Click
+                                                </span><span id="ltext1">Live</span></button>
+                                        </a><!-- masai cypress class="project-deployed-link" -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- web project 5 -->
+                            <div class="projectsDis" class="project-card"><!-- masai cypress class="project-card" -->
+                                <div class="procontent">
+                                    <p id="procheading" class="project-title">TATA-1mg imitation</p>
+                                    <!-- masai cypress class="project-title" -->
+                                    <p id="proccollab" style="margin-top: 12px;">A collaborative project, built in 5
+                                        days by a team of 5 developers.</p>
+                                    <p id="proctext" class="project-description">Contributed to the front-end
+                                        development and design of the product page for a web development project,
+                                        utilizing skills
+                                        in front-end web development, user interface design, and e-commerce
+                                        functionality to create a user-friendly and
+                                        efficient product page where users can view a single product, filter by brand,
+                                        and sort by price or rating, while
+                                        ensuring the page is completely responsive across different devices.</p>
+                                    <!-- masai cypress class="project-description" -->
+                                    <p id="proccollab">-: Skills utilized :-</p>
+                                    <div class="proctech0" class="project-tech-stack">
+                                        <!-- masai cypress class="project-tech-stack" -->
+                                        <marquee width="100%" scrollamount="4" direction="left" height="100px">
+                                            <div class="proctech001">
+                                                <div class="protech1"><span id="proctech">HTML</span></div>
+                                                <div class="protech1"><span id="proctech">CSS</span></div>
+                                                <div class="protech1"><span id="proctech">JS(ES6)</span></div>
+                                                <div class="protech1"><span id="proctech">JSON</span></div>
+                                                <div class="protech1"><span id="proctech">Local Storage</span></div>
+                                            </div>
+                                        </marquee>
+                                    </div>
+                                    <div class="btngl">
+                                        <a href="https://github.com/Mr-raaz/1Mg_Clone_Project" target="_blank"
+                                            class="project-github-link"><button class="custom-btn btn-12"><span
+                                                    id="gtext1">Click
+                                                </span><span id="gtext1">Github</span></button>
+                                        </a><!-- masai cypress class="project-github-link" -->
+                                        <a href="https://celebrated-brioche-bea6c1.netlify.app/index.html"
+                                            target="_blank" class="project-deployed-link"><button
+                                                class="custom-btn btn-12"><span id="ltext1">Click
+                                                </span><span id="ltext1">Live</span></button>
+                                        </a><!-- masai cypress class="project-deployed-link" -->
+                                    </div>
+                                </div>
+                                <div class="proframe">
+                                    <!-- <iframe id="iframe" src="https://celebrated-brioche-bea6c1.netlify.app/index.html"></iframe> -->
+                                    <img id="posterPro" src="./assests/1mg poster.png"></img>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="mp1">
+                        <p id="mptext1">-: Some Mini Projects :-</p>
+                        <div class="minorpro">
+                            <!-- 1 -->
+                            <div class="minorcard">
+                                <img id="minorimage" src="./assests/weather project.png" />
+                                <p id="minorname">Weather around me</p>
+
+                                <p>
+                                    <span id="minorlink1"><a
+                                            href="https://github.com/masai-course/sonu_kumar_yadav_pa02_004/tree/master/unit-5/sprint-2/day-3/assignments/Weather%20III"
+                                            target="_blank">Github</a>
+                                    </span>
+                                    <span id="minorline"> | </span>
+                                    <span id="minorlink2"><a href="https://animated-zuccutto-f77c4f.netlify.app/"
+                                            target="_blank">Live</a>
+                                    </span>
+                                </p>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="minorcard">
+                                <img id="minorimage" src="./assests/printmovie.png" />
+                                <p id="minorname">Print my movies list</p>
+                                <p>
+                                    <span id="minorlink1"><a
+                                            href="https://github.com/masai-course/sonu_kumar_yadav_pa02_004/tree/master/unit-5/sprint-2/day-2/assignments/OMDB%20MOVIE%20APP%20III"
+                                            target="_blank">Github</a>
+                                    </span>
+                                    <span id="minorline"> | </span>
+                                    <span id="minorlink2"><a href="https://profound-platypus-123be6.netlify.app/"
+                                            target="_blank">Live</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <!-- 3 -->
+                            <div class="minorcard">
+                                <img id="minorimage" src="./assests/youtube.png" />
+                                <p id="minorname">Mini Youtube</p>
+
+                                <p>
+                                    <span id="minorlink1"><a
+                                            href="https://github.com/masai-course/sonu_kumar_yadav_pa02_004/tree/master/unit-5/sprint-3/day-1/assignments/YouTube%20-%20II"
+                                            target="_blank">Github</a>
+                                    </span>
+                                    <span id="minorline"> | </span>
+                                    <span id="minorlink2"><a href="https://warm-liger-754088.netlify.app/"
+                                            target="_blank">Live</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <!-- 4 -->
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- git stats  -->
+                <p
+                    style="display:block;font-size: 35px; font-weight: 900; text-align: center; padding: 10px; color:#ffffff; background-color: rgb(21,21,21);border-top-right-radius:10px;border-top-left-radius:10px; width:100%;margin:auto;">
+                    My Github Calender</p>
+                <div class="calendar" class="react-activity-calendar"
+                    style="background-color: rgb(21,21,21); width:100%;color:#ffffff; font-size: 24px; font-weight: 500;">
+                    <!-- masai cypress class="react-activity-calendar" -->
+                    <!-- Loading stuff -->
+                    Loading the data just for you.
+                </div>
+                <div style="text-align: center;">
+                    <div>
+                        <img id="github-streak-stats"
+                            src="https://github-readme-streak-stats.herokuapp.com?user=sonukryadav&theme=dark&date_format=M%20j%5B%2C%20Y%5D&type=png" /><!-- masai cypress  id="github-streak-stats" -->
+                        <picture id="github-stats-card"><!-- masai cypress  id="github-stats-card" -->
+                            <source
+                                srcset="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true&theme=dark"
+                                media="(prefers-color-scheme: dark)" />
+                            <source
+                                srcset="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true"
+                                media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                            <img
+                                src="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true" />
+                        </picture>
+                    </div>
+                </div>
+
+
+                <div style="text-align: center;">
+                    <img id="github-top-langs"
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=sonukryadav&layout=compact&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" /><!-- masai cypress  id="github-top-langs" -->
+                </div>
+
+
+                <div><a href="https://github.com/sonukryadav"><button id="res3Git">Github</button></a></div>
+
+
+                <!-- blog -->
+                <div class="blog1">
+                    <h1 id="blo1">Blogs</h1>
+
+                    <div class="blo2">
+                        <!-- ------------ -->
+                        <div class="blog3">
+                            <div class="post1">
+                                <img id="postimg" src="./assests/post1-1mg.png" />
+                                <p id="posttext">This cloned website is designed with the technologies HTML, CSS and
+                                    JAVASCRIPT. All the pages of this cloned website are...</p>
+                                <a href="https://medium.com/@sonukryadav56/tata-1mg-clone-cf01a38a626c" target="_blank">
+                                    <p id="readmore1">Read More</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ------------- -->
+
+                    </div>
+                </div>
+
+
+                <!-- contact -->
+
+                <div class="contact1">
+                    <h1 id="con0">Contact</h1>
+
+                    <p id="contxt1"> <span id="pen1" class="material-symbols-outlined">drive_file_rename_outline</span>
+                        Below map shows my correspondence city.</p>
+                    <p id="contxt2"><span id="pen1" class="material-symbols-outlined">drive_file_rename_outline</span>
+                        Fill the below form to contact me.</p>
+
+                    <div class="con1">
+
+                        <div class="con2">
+                            <iframe id="con3"
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSc11VHb9gFSvoXgTjAHKiAIiszH8qV2Lr5nBn7_9EuoKFXdcA/viewform?embedded=true"
+                                frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        </div>
+
+                        <div class="map1">
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0"
+                                        scrolling="no" marginheight="0" marginwidth="0"
+                                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Delhi, saket&amp;t=h&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                        href="https://piratebay-proxys.com/">Piratebay</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- copyright -->
+                <div class="copyright1">
+                    <p id="cr1">
+                        <span>Thanks for visiting - </span>
+                        <span id="cr3"><a style="color: rgb(0, 140, 255);" href="mailto:webmaster@example.com">Sonu
+                                Kr.</a></span>
+                    </p>
+                </div>
+
+                <!-- flowers -->
+                <div>
+
+                    <div class="flowerrb">
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                        <div>
+                            <img id="flow2" src="./assests/potted-flower-plant-flat.gif" alt="flower">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </body>
 
 </html>
+<script type="module" src="./index.js"></script>
+
+<!-- typed.js -->
+<script src="./typed.js"></script>
+<script>
+    var typed = new Typed('.type', {
+        strings: [
+            ' React Native Developer & ',
+            ' MERN Stack Developer.',
+        ],
+
+        // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+        stringsElement: null,
+        // typing speed
+        typeSpeed: 180,
+        // time before typing starts
+        startDelay: 1200,
+        // backspacing speed
+        backSpeed: 50,
+        // time before backspacing
+        backDelay: 500,
+        // loop
+        loop: true,
+        // false = infinite
+        loopCount: 100,
+        // show cursor
+        showCursor: true,
+        // character for cursor
+        cursorChar: "🔍",
+
+        // attribute to type (null == text)
+        attr: null,
+        // either html or text
+        contentType: 'html',
+        // call when done callback function
+        callback: function () { },
+        // starting callback function before each string
+        preStringTyped: function () { },
+        //callback for every typed string
+        onStringTyped: function () { },
+        // callback for reset
+        resetCallback: function () { }
+    });
+</script>
+<script>
+    var xArray = ["HTML", "CSS", "SASS", "JS(ES6)", "JSON", "JAVA", "React js", "React Native", "Redux", "Git/Github", "Material UI", "Chakra UI", "Bootstrap"];
+    var yArray = [84, 69, 42, 85, 73, 70, 87, 85, 80, 88, 90, 83, 70];
+    var data = [{
+        x: xArray,
+        y: yArray,
+        type: "bar"
+    }];
+    var layout = { title: "Skills strength based on practice" };
+    Plotly.newPlot("myPlot", data, layout);
+</script>
 
 
+
+
+<!-- git stats -->
+<script>
+
+    function text() { };
+    GitHubCalendar(".calendar", "sonukryadav");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "sonukryadav", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "sonukryadav", {
+        proxy(sonukryadav) {
+            return fetch(`https://your-proxy.com/github?user=${sonukryadav}`)
+        }
+    }).then(r => r)
+</script>
