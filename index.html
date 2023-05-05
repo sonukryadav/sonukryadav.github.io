@@ -230,6 +230,31 @@
                 </div>
 
             </section>
+
+
+            <!-- git stats  -->
+            <p
+                style="display:block;font-size: 35px; font-weight: 900; text-align: center; padding: 10px; color:#ffffff; background-color: rgb(21,21,21);border-top-right-radius:10px;border-top-left-radius:10px; width:100%;margin:auto;">
+                My Github Calender</p>
+            <div class="calendar" class="react-activity-calendar"
+                style="background-color: rgb(21,21,21); width:100%;color:#ffffff; font-size: 24px; font-weight: 500;">
+                <!-- masai cypress class="react-activity-calendar" -->
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+            <div style="text-align: center;">
+                <div>
+                    <img id="github-streak-stats"
+                        src="https://github-readme-streak-stats.herokuapp.com?user=sonukryadav&theme=dark&date_format=M%20j%5B%2C%20Y%5D&type=png" /><!-- masai cypress  id="github-streak-stats" -->
+                    <picture id="github-stats-card"><!-- masai cypress  id="github-stats-card" -->
+                        <source srcset="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true&theme=dark"
+                            media="(prefers-color-scheme: dark)" />
+                        <source srcset="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true"
+                            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                        <img src="https://github-readme-stats.vercel.app/api?username=sonukryadav&show_icons=true" />
+                    </picture>
+                </div>
+            </div>
             <!-- random -->
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
@@ -277,3 +302,21 @@
     </body>
 
 </html>
+
+
+<!-- git stats -->
+<script>
+
+    function text() { };
+    GitHubCalendar(".calendar", "sonukryadav");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "sonukryadav", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "sonukryadav", {
+        proxy(sonukryadav) {
+            return fetch(`https://your-proxy.com/github?user=${sonukryadav}`)
+        }
+    }).then(r => r)
+</script>
